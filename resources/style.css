@@ -1,0 +1,1319 @@
+@font-face {
+    font-family: 'LEMONMILK';
+    src: url('fonts/LEMONMILK.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeueHaas';
+    src: url('fonts/NeueHaasDisplayLight.ttf');
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: rgb(15, 15, 15);
+  --color1: #fdfdfd;
+  --color2: #1b1b1b;
+
+  --colortext: #fdfdfdcc;
+  --colorshadow: #000000;
+
+  --tiltebg: #2a1a35;
+  --titlebo: #5c5068;
+
+  --underline: #404040;
+  --ftlistbg: #fdfdfdcc;
+  --inlistbg: #fdfdfdcc;
+  --walistbg: #fdfdfdcc;
+  --nulistbg: #fdfdfdcc;
+
+  --einfbg: #ffffff47;
+
+  --infoboxcolor: #d3d3d3;
+  --infoboxcolor_border: #626126;
+  --infoboxcolor_debuff: #642522;
+  --infoboxcolor_buff: #4a5c2a;
+  --infoboxcolor_example: rgb(43, 80, 87);
+
+  --buttoncolor: #f3f3f3;
+
+  --red: #ff0000;
+  --green: #59c51f;
+  --yellow: #d6c754;
+  --blue: #1fb4c5;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    overflow: auto;
+    box-sizing: border-box;
+    background-image: url(../resources/images/image_background.jpg);
+    background-size: cover;
+    cursor: default;
+}
+
+.yellowinf {
+  color: var(--yellow);
+  display: contents;
+}
+.greeninf {
+  color: var(--green);
+  display: contents;
+}
+.redinf {
+  color: var(--red);
+  display: contents;
+}
+.blueinf {
+  color: var(--blue);
+  display: contents;
+}
+
+.red {
+  color: var(--red);
+}
+
+.green {
+  color: var(--green);
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.em-margin-v {
+  margin: 1em 0;
+}
+.em-margin-top {
+  margin-top: 1em !important;
+}
+.em-margin-bottom {
+  margin-bottom: 1em;
+}
+.em-separator{
+  width: 100%;
+  padding-top: 1em
+}
+
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f111;
+}
+::-webkit-scrollbar-thumb {
+  background: #ce710088;
+  border-radius: 20%;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d58411;
+}
+
+/* ----------------------------------------------------- GENERAL ----------------------------------------------------- */
+#header {
+  height: 100vh;
+  align-content: center;
+  background-image: url(../resources/images/image_background_header.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#header-title { 
+  background-size: cover;
+  background-position-y: 65%;
+  color: white;
+  text-shadow: 0 0 20px BLACK;
+  text-transform: uppercase;
+  font-family: 'LEMONMILK';
+  font-size: 15vw;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.button-launch-wrap {
+  border: 2px solid transparent;
+  padding: 3px;
+  transition: all linear 0.3s;
+}
+
+.button-launch-wrap a {
+  text-decoration: none;
+}
+
+.button-launch-inner {
+  background: #337142;
+  border: 1px solid var(--colortext);
+  font-family: 'NeueHaas';
+  text-transform: uppercase;
+  font-size: 1.5vw;
+  color: var(--colortext);
+  padding: 0.1em 1.5em;
+  letter-spacing: 5px;
+  transition: all linear 0.3s;
+}
+
+.button-launch-wrap:hover  {
+  cursor: pointer;
+  border: 2px solid var(--colortext);
+}
+
+.button-launch-wrap:hover .button-launch-inner {
+  background: #468757;
+}
+
+
+#me-button-wrap {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  padding: 3px;
+  border: 2px solid transparent;
+  transition: all linear 0.3s;
+}
+
+#me-button-wrap a {
+  text-decoration: none;
+  color: var(--colortext);
+}
+
+#me-button {
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+  border: 1px solid #ffce1f;
+  background: rgba(183, 140, 37, .4);
+}
+
+#bng-numbers {
+  color: #479ce4;
+}
+
+#me-button img {
+  width: 1.2em;
+  margin-right: 0.5em;
+  filter: drop-shadow(1px 1px 1px #0000006e);
+}
+
+#me-button span {
+  font-family: 'NeueHaas';
+  font-size: 1em;
+  text-shadow: 1px 1px 1px #0000006e;
+}
+
+#me-button-wrap:hover {
+  cursor: pointer;
+  border: 2px solid #ffce1f;
+}
+
+#me-button-wrap:hover #me-button {
+  background: rgba(183, 140, 37, .6);
+}
+
+h1 {
+  font-family: 'LEMONMILK';
+  font-size: 10vw;
+  color: var(--color1);
+  font-weight: 100;
+  text-align: center;
+  transition: all linear 0.3s;
+}
+
+h2 {
+  font-family: 'NeueHaas';
+  font-size: 4vw;
+  text-transform: uppercase;
+  color: var(--color1);
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  margin-bottom: 0.5em;
+  background: var(--tiltebg);
+  border-bottom: 15px solid var(--titlebo);
+  border-top: 1px solid white;
+  font-weight: 800;
+}
+
+h3 {
+  font-family: 'NeueHaas';
+  text-transform: uppercase;
+  font-size: 2vw;
+  font-weight: 100;
+  color: var(--colortext);
+  padding: 0.2em 0.5em;
+  display: inline-block;
+  background: var(--infoboxcolor_border);
+  width: 100%;
+}
+
+h4 {
+  font-family: 'NeueHaas';
+  text-transform: uppercase;
+  font-size: 1.5vw;
+  font-weight: 100;
+  color: var(--colortext);
+  text-align: center;
+  margin: 1em 0;
+  text-decoration: underline;
+}
+
+.h2-end {
+  width: 100%;
+  border-top: 1em solid var(--titlebo);
+  height: 3em;
+  background: var(--tiltebg);
+  margin-top: 5em;
+  box-shadow: 0 0 10px 1px var(--colorshadow);
+}
+
+.content-end {
+  margin-top: 15em;
+}
+
+.main-header-background {
+  text-align: center;
+  align-content: center;
+  position: relative;
+  transition: all linear 0.3s;
+  padding: 5em 0;
+  z-index: 1;
+}
+
+.header-top-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4em;
+  background-repeat: repeat-x;
+  background-image: url(../resources/images/header_top_pattern.png);
+}
+
+.header-top-flag {
+  position: absolute;
+  top: 0;
+  right: 1em;
+  width: 7vw;
+}
+
+.header-bottom-pattern {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4em;
+  display: block;
+  background-repeat: repeat-x;
+  background-image: url(../resources/images/header_top_pattern.png);
+  transform: scaleY(-1);
+}
+
+.section-content {
+  opacity: 0.8;
+}
+
+.content-wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.paragraph {
+  font-family: 'NeueHaas';
+  font-size: 1vw;
+  text-align: justify;
+  text-align-last: left;
+  color: var(--color1);
+  margin-bottom: 1em;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  text-shadow: 0px 0px 10px var(--colorshadow);
+}
+
+.paragraph img {
+  width: 100%;
+  margin: 1em 0;
+  border-radius: 0.5em;
+  box-shadow: 0 0 10px 1px var(--colorshadow);
+}
+
+.info-box {
+  background-color: var(--color2);
+  border-top: 1px solid var(--color1);
+  box-shadow: 0 0 10px 1px var(--colorshadow);
+  margin-bottom: 1em;
+}
+
+.info-box hr {
+  margin-left: -1em;
+  width: calc(100% + 2em);
+  border-color: #ffffff1c;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.info-box-content-wrap {
+  padding: 1em;
+}
+
+.info-box-debuff h3 {
+  background: var(--infoboxcolor_debuff);
+}
+.info-box-buff h3 {
+  background: var(--infoboxcolor_buff);
+}
+.info-box-example h3 {
+  background: var(--infoboxcolor_example);
+}
+
+.info-box p {
+  font-family: 'NeueHaas';
+  font-size: 1vw;
+  font-weight: 100;
+  color: var(--colortext);
+  margin-bottom: 0.5em;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+
+.info-box li {
+  font-family: 'NeueHaas';
+  text-transform: uppercase;
+  font-size: 1vw;
+  font-weight: 100;
+  color: var(--colortext);
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+
+.info-box-icon {
+  height: 3vw;
+  width: 3vw;
+  float: right;
+}
+
+.info-box-icon-resonance {
+  margin-left: 0.5em;
+  filter: invert(60%) sepia(250%) saturate(1500%) hue-rotate(-10deg) brightness(140%) contrast(50%);
+}
+
+.info-box-top-img {
+  width: 100%;
+  height: 15em;
+  object-fit: cover;
+  border-radius: 0.5em;
+  margin-bottom: 1em;
+}
+
+.features li {
+  list-style: none;
+  border-bottom: 1px solid var(--ftlistbg);
+  padding: 0.1em 0.5em;
+  margin: 0.5em 0;
+}
+
+.features li::before {
+  content: '';
+  background: url(../resources/images/icon_feature.svg);
+  padding: inherit;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 0.5em;
+  opacity: 0.75;
+}
+
+.info li {
+  list-style: none;
+  border-bottom: 1px solid var(--ftlistbg);
+  padding: 0.1em 0.5em;
+  margin: 0.5em 0;
+}
+
+.info li::before {
+  content: '';
+  background: url(../resources/images/icon_info.svg);
+  padding: inherit;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 0.5em;
+  opacity: 0.80;
+}
+
+.warnings li {
+  list-style: none;
+  border-bottom: 1px solid var(--ftlistbg);
+  padding: 0.1em 0.5em;
+  margin: 0.5em 0;
+}
+
+.warnings li::before {
+  content: '';
+  background: url(../resources/images/icon_warn.svg);
+  padding: inherit;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 0.5em;
+  opacity: 0.75;
+}
+
+.locked li {
+  font-family: 'NeueHaas';
+  list-style: none;
+  background: #b7ffc73d;
+  padding: 0.5em 0.5em;
+  color: var(--colortext);
+  width: fit-content;
+  margin: 0.5em auto;
+  border: 1px solid #3b7d4b;
+}
+
+.locked li::before {
+  content: '';
+  background: url(../resources/images/icon_lock.svg);
+  padding: inherit;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 0.5em;
+  opacity: 0.75;
+}
+
+.numbered li {
+  list-style: decimal;
+  display: list-item;
+  list-style-position: inside;
+  border-bottom: 1px solid var(--ftlistbg);
+  padding: 0.1em 0.5em;
+  margin: 1em 0;
+}
+
+.numbered li::marker {
+  color: var(--blue);
+}
+
+.flip-resonance {
+  width: 3vw;
+  height: 3vw;
+  float: right;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 0.6s ease;
+  margin-left: 0.5em;
+}
+
+.flip-resonance-inner {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+
+.flip-resonance-front,
+.flip-resonance-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.flip-resonance-back {
+  transform: rotateY(180deg);
+}
+
+.flip-resonance:hover .flip-resonance-inner {
+  transform: rotateY(180deg);
+}
+
+.center {
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
+.tutorial-video {
+  width: 75%;
+  padding: 1px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid var(--colortext);
+}
+
+.attribution-link {
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+  margin: 1em auto;
+}
+
+.attribution-wrap {
+  padding: 3px;
+  border: 2px solid transparent;
+}
+
+.attribution {
+  font-family: 'NeueHaas';
+  font-size: 1em;
+  padding: 0.5em;
+  text-transform: uppercase;
+  border: 1px solid var(--colortext);
+  transition: all linear 0.3s;
+  background: transparent;
+  color: var(--colortext);
+}
+
+.attribution-wrap:hover {
+  border: 2px solid var(--colortext);
+  cursor: pointer;
+}
+
+
+.attribution-wrap:hover .attribution {
+  background: rgba(255, 255, 255, 0.40);
+}
+
+.attribution:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.encounter-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1em;
+}
+
+.encounter-info-container {
+  background-color: var(--color2);
+  box-shadow: 0 0 10px 1px var(--colorshadow);
+}
+
+.encounter-info-container span {
+  font-family: 'NeueHaas';
+  text-transform: uppercase;
+  color: var(--colortext);
+  font-size: 1vw;
+  display: block;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  background: #1a2935;
+  padding: 0.2em;
+  border-top: 1px solid var(--colortext);
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+
+.encounter-info-container p {
+  font-family: 'NeueHaas';
+  color: var(--colortext);
+  font-size: 1vw;
+  display: block;
+  padding: 1em;
+  text-align: center;
+}
+
+.encounter-info-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
+  padding: 1em;
+  width: fit-content;
+  column-gap: 1em;
+  row-gap: 1em;
+  margin: 0 auto;
+}
+
+.encounter-info-grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+  padding: 1em;
+  width: fit-content;
+  column-gap: 1em;
+  row-gap: 1em;
+  margin: 0 auto;
+}
+
+.encounter-info-grid-5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+  padding: 1em;
+  width: fit-content;
+  column-gap: 1em;
+  row-gap: 1em;
+  margin: 0 auto;
+}
+
+.encounter-info-grid-6 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+  padding: 1em;
+  width: fit-content;
+  column-gap: 1em;
+  row-gap: 1em;
+  margin: 0 auto;
+}
+
+.loot-column {
+  align-content: center;
+}
+
+.loot-wrap {
+  padding: 3px;
+  border: 2px solid transparent;
+  width: calc(4em + 7px);
+  height: calc(4em + 8px);
+  margin: 0 auto;
+  transition: all linear 0.3s;
+}
+
+.loot-image {
+  border: 3px solid var(--colortext);
+  height: 100%;
+  opacity: 0.9;
+  transition: all linear 0.3s;
+}
+
+.loot-wrap:hover {
+  border: 2px solid var(--colortext);
+  cursor: pointer;
+}
+
+.loot-wrap-euphony {
+  padding: 3px;
+  border: 2px solid transparent;
+  width: calc(4em + 7px);
+  height: calc(4em + 8px);
+  margin: 0 auto;
+  transition: all linear 0.3s;
+}
+
+.loot-wrap-euphony:hover {
+  border: 2px solid rgba(215, 215, 0, 0.80);
+  cursor: pointer;
+}
+
+.non-weapon:hover {
+  cursor: default;
+}
+
+.loot-wrap:hover .loot-image {
+  opacity: 1;
+}
+
+.enemy-column {
+  align-content: center;
+}
+
+.enemy-wrap {
+  padding: 3px;
+  border: 2px solid transparent;
+  width: calc(4em + 7px);
+  height: calc(4em + 7px);
+  margin: 0 auto;
+  transition: all linear 0.3s;
+  position: relative;
+}
+
+.enemy-image {
+  border: 3px solid var(--colortext);
+  height: 100%;
+  opacity: 0.9;
+  transition: all linear 0.3s;
+}
+
+.enemy-wrap:hover {
+  border: 2px solid var(--colortext);
+}
+
+.role-title {
+  font-family: 'NeueHaas';
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 3vw;
+  color: var(--colortext);
+}
+
+.title-red {
+  background: #7d2a2a;
+}
+.title-green {
+  background: #3d6726;
+}
+
+.title-yellow {
+  background: #7c7330;
+}
+
+
+.roles {
+  width: fit-content;
+  margin: auto;
+}
+
+.roles li {
+  list-style: none;
+  padding: 0.1em 0.5em;
+  margin: 0.5em 0;
+  border-radius: 0.5em;
+  font-family: 'NeueHaas';
+  text-transform: uppercase;
+  color: var(--colortext);
+  font-size: 2vw;
+}
+
+.roles li::before {
+  content: '';
+  background: url(../resources/images/icon_ghost.svg);
+  padding: inherit;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 0.5em;
+}
+
+/* ----------------------------------------------------- INTRODUCTION ----------------------------------------------------- */
+#header-introduction {
+  background: url(../resources/images/header_introduction_background.jpg) no-repeat center center fixed;
+  background-position-y: 0%;
+}
+
+#resonance-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 1em;
+}
+
+#resonance-grid span {
+  font-family: 'NeueHaas';
+  text-transform: uppercase;
+  font-size: 1vw;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: var(--colortext);
+}
+
+#resonance-grid img {
+  width: 100%;
+  filter: drop-shadow(0px 0px 5px black);
+}
+.res-grid-info-wrap {
+  width: 100%;
+  display: block !important;
+  font-size: 1.5vw !important;
+}
+.res-grid-info {
+  display: inline !important;
+  font-size: 1.5vw !important;
+  color: var(--yellow) !important;
+}
+
+/* ----------------------------------------------------- TRAVERSAL I ----------------------------------------------------- */
+#header-traversali {
+  background: url(../resources/images/header_traversali_background.jpg) no-repeat center center fixed;
+  background-position-y: 0%;
+}
+
+/* ----------------------------------------------------- SUBSTRATUM ----------------------------------------------------- */
+#header-substratum {
+  background: url(../resources/images/header_substratum_background.jpg) no-repeat center center fixed;
+  background-position-y: 0%;
+  margin-bottom: 1em;
+}
+
+#substratum-roles-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 2em;
+  column-gap: 1em;
+}
+
+.substratum-roles-column {
+  border-top: 1px solid var(--colortext);
+  background-color: var(--color2);
+  box-shadow: 0 0 10px 1px var(--colorshadow);
+}
+
+/* ----------------------------------------------------- TRAVERSAL II ----------------------------------------------------- */
+#header-traversalii {
+  background: url(../resources/images/header_traversalii_background.jpg) no-repeat center center fixed;
+  background-position-y: 0%;
+}
+
+/* ----------------------------------------------------- DISSIPATION ----------------------------------------------------- */
+#header-dissipation {
+  background: url(../resources/images/header_dissipation_background.jpg) no-repeat center center fixed;
+  background-position-y: 0%;
+}
+
+#dissipation-roles-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 2em;
+  column-gap: 1em;
+}
+
+.dissipation-roles-column {
+  border-top: 1px solid var(--colortext);
+  background-color: var(--color2);
+  box-shadow: 0 0 10px 1px var(--colorshadow);
+}
+
+.dissipation-roles-ghosts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1em;
+  width: 50%;
+  margin: auto;
+  padding: 1em;
+}
+
+.dissipation-roles-ghosts img {
+  height: 3em;
+  width: 100%;
+}
+
+.dissipation-miniboss-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1em;
+  margin-bottom: 1em;
+}
+
+.dissipation-miniboss-grid span {
+  width: 100%;
+  display: block;
+  font-family: 'Poppins';
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+.dissipation-miniboss-grid img {
+  border-radius: 0.5em;
+  width: 100%;
+}
+
+/* ----------------------------------------------------- TRAVERSAL III ----------------------------------------------------- */
+#header-traversaliii {
+  background: url(../resources/images/header_traversaliii_background.jpg) no-repeat center center fixed;
+  background-position-y: 0%;
+}
+
+/* ----------------------------------------------------- REPOSITORY ----------------------------------------------------- */
+#header-repository {
+  background: url(../resources/images/header_repository_background.jpg) no-repeat center center fixed;
+  background-position-y: 0%;
+}
+
+/* ----------------------------------------------------- VERITY ----------------------------------------------------- */
+#header-verity {
+  background: url(../resources/images/header_verity_background.jpg) no-repeat center center fixed;
+  background-position-y: 0%;
+}
+
+#header-verity h1{
+  color: black;
+}
+
+#header-verity:hover {
+  background: url(../resources/images/header_verity2_background.jpg) no-repeat center center fixed;
+  background-position-y: 0%;
+}
+
+#header-verity:hover h1 {
+  color: white;
+}
+
+#verity-roles-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 2em;
+  column-gap: 1em;
+}
+
+.verity-roles-column {
+  background-color: var(--color2);
+  box-shadow: 0 0 10px 1px var(--colorshadow);
+}
+
+.verity-roles-ghosts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1em;
+  width: 50%;
+  margin: auto;
+  padding: 1em;
+}
+
+.verity-fashion-format {
+  display: block;
+  font-size: 1vw;
+  width: fit-content;
+  background-color: #0c0c0c80;
+  color: #fcfcfc;
+  padding: 0.5em;
+  margin-top: 0.5em;
+}
+
+.verity-condition {
+  background: #ffffff12;
+  padding: 0.5em;
+}
+
+.condition-inside {
+  color: var(--yellow);
+}
+
+.condition-outside {
+  color: var(--green);
+}
+
+.verity-warning {
+  background: #780000c2;
+  padding: 0.5em;
+  border: 1px solid #ff000059;
+}
+
+.vertiy-3d-shapes-img {
+  height: auto;
+}
+
+.verity-simulator-container {
+  padding: 0.5em;
+  border: 1px solid var(--colortext);
+  backdrop-filter: blur(5px);
+  font-family: 'NeueHaas';
+  color: var(--colortext);
+  background-image: url(../resources/images/background_simulator.jpeg);
+  background-size: cover;
+}
+
+.simulator-title {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #ffffff17;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px black;
+}
+
+.simulator-launch-container {
+  display: flex;
+  height: fit-content;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.simulator-launch-container a {
+  text-decoration: none;
+}
+
+.simulator-name {
+  font-size: 3em;
+  font-weight: bold;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px black;
+}
+
+.simulator-location {
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px black;
+}
+
+.simulator-launch {
+  height: fit-content;
+}
+
+/* ----------------------------------------------------- TRAVERSAL IV ----------------------------------------------------- */
+#header-traversaliv {
+  background: url(../resources/images/header_traversaliv_background.jpg) no-repeat center center fixed;
+  background-position-y: 0%;
+}
+
+/* ----------------------------------------------------- ZENITH ----------------------------------------------------- */
+#header-zenith {
+  background: url(../resources/images/header_zenith_background.jpg) no-repeat center center fixed;
+  background-position-y: 0%;
+}
+
+#zenith-roles-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 2em;
+  column-gap: 1em;
+}
+
+.zenith-roles-column {
+  background-color: var(--color2);
+  box-shadow: 0 0 10px 1px var(--colorshadow);
+}
+
+.zenith-roles-ghosts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1em;
+  width: 50%;
+  margin: auto;
+  padding: 1em;
+}
+
+/* ----------------------------------------------------- NAVBAR ----------------------------------------------------- */
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: var(--color2);
+  padding: 1em;
+  height: 100%;
+}
+
+.left-sidebar {
+  position: fixed;
+  top: 1em;
+  height: 100%;
+  transition: transform ease 0.3s;
+  z-index: 5;
+}
+.left-sidebar {
+  left: 0%;
+}
+.left-sidebar.hidden {
+  transform: translateX(-100%);
+}
+.sidebar-container-left {
+  height: 100vh;
+}
+
+.sidebar-title {
+  font-family: 'NeueHaas';
+  text-transform: uppercase;
+  font-size: 3vw;
+  font-weight: 800;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  display: block;
+  padding: 0 0.5em;
+  color: var(--colortext);
+  background: #ffffff29;
+  border-bottom: 5px solid var(--colortext);
+  backdrop-filter: blur(10px);
+  width: 100%;
+}
+
+.sidebar-btn {
+  position: absolute;
+  cursor: pointer;
+  padding: 3px;
+  border: 2px solid transparent;
+  transition: border linear 0.3s;
+  visibility: hidden;
+}
+
+.sidebar-show {
+  visibility: visible;
+}
+
+.sidebar-btn:hover {
+  border: 2px solid var(--colortext);
+}
+
+.sidebar-btn-inner {
+  width: 2.5em;
+  height: 2.5em;
+  padding: 3px;
+  border: 1px solid white;
+  transition: all linear 0.3s;
+  backdrop-filter: blur(5px);
+}
+
+.sidebar-btn-img {
+  padding: 2px;
+}
+
+.sidebar-btn:hover .sidebar-btn-inner {
+  background: rgba(255, 255, 255, 0.263);
+}
+
+.sidebar-btn-close:hover {
+  border: 2px solid rgba(255, 0, 0, 0.8);
+}
+
+.sidebar-btn-close .sidebar-btn-inner {
+  border: 1px solid rgba(255, 0, 0, 0.8);
+}
+
+.left-btn {
+  left: 100%;
+  margin-left: 1em;
+}
+
+.index {
+  padding: 0.5em;
+  background: linear-gradient(90deg, #000000, transparent);
+  backdrop-filter: blur(5px);
+  font-family: 'NeueHaas';
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--colortext);
+  list-style: none;
+  font-size: 1.5vw;
+}
+
+.index li {
+  padding: 3px;
+  border: 2px solid transparent;
+  transition: all linear 0.3s;
+}
+
+.index li:hover {
+  border: 2px solid var(--colortext);
+}
+
+.index li div {
+  padding: 0.1em 0.5em;
+  padding-top: 5px;
+  cursor: pointer;
+  color: var(--colortext);
+  transition: all linear 0.3s;
+  position: relative;
+  border: 1px solid var(--colortext);
+}
+
+.index li:hover div {
+  cursor: pointer;
+  color: white;
+  background: rgba(255, 255, 255, 0.263);
+}
+
+#link-text-introduction::before {
+  content: url(../resources/images/icon_introduction.svg);
+  vertical-align: middle;
+  display: inline-block;
+  width: 1.5vw;
+  margin-right: 0.5em;
+}
+
+#link-text-traversali::before {
+  content: url(../resources/images/icon_traversali.svg);
+  vertical-align: middle;
+  display: inline-block;
+  width: 1.5vw;
+  margin-right: 0.5em;
+}
+
+#link-text-substratum::before {
+  content: url(../resources/images/icon_substratum.svg);
+  vertical-align: middle;
+  display: inline-block;
+  width: 1.5vw;
+  margin-right: 0.5em;
+}
+
+#link-text-traversalii::before {
+  content: url(../resources/images/icon_traversalii.svg);
+  vertical-align: middle;
+  display: inline-block;
+  width: 1.5vw;
+  margin-right: 0.5em;
+}
+
+#link-text-dissipation::before {
+  content: url(../resources/images/icon_dissipation.svg);
+  vertical-align: middle;
+  display: inline-block;
+  width: 1.5vw;
+  margin-right: 0.5em;
+}
+
+#link-text-traversaliii::before {
+  content: url(../resources/images/icon_traversaliii.svg);
+  vertical-align: middle;
+  display: inline-block;
+  width: 1.5vw;
+  margin-right: 0.5em;
+}
+
+#link-text-repository::before {
+  content: url(../resources/images/icon_repository.svg);
+  vertical-align: middle;
+  display: inline-block;
+  width: 1.5vw;
+  margin-right: 0.5em;
+}
+
+#link-text-verity::before {
+  content: url(../resources/images/icon_verity.svg);
+  vertical-align: middle;
+  display: inline-block;
+  width: 1.5vw;
+  margin-right: 0.5em;
+}
+
+#link-text-traversaliv::before {
+  content: url(../resources/images/icon_traversaliv.svg);
+  vertical-align: middle;
+  display: inline-block;
+  width: 1.5vw;
+  margin-right: 0.5em;
+}
+
+#link-text-zenith::before {
+  content: url(../resources/images/icon_zenith.svg);
+  vertical-align: middle;
+  display: inline-block;
+  width: 1.5vw;
+  margin-right: 0.5em;
+}

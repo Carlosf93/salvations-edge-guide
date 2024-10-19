@@ -1,0 +1,2018 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+    <title>Salvation's Edge Guide</title>
+    <link rel="icon" type="image/x-icon" href="./resources/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="resources/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/b1c55f31a2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <span id="header-title">Salvation's Edge</span>
+        <div id="me-button-wrap">
+            <a href="https://linktr.ee/carlosf93" target="_blank">
+                <div id="me-button">
+                    <img src="./resources/images/icon_bungie.svg"/>
+                    <span>Carlosf93</span>
+                    <span id="bng-numbers">#9188</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="content">
+        <!-- INTRODUCTION -->
+        <div class="main-header-background" id="header-introduction">
+            <div class="header-top-pattern"></div>
+            <img class="header-top-flag" src="./resources/images/flag_introduction.svg"/>
+            <div class="header-bottom-pattern"></div>
+            <h1>INTRODUCTION</h1>
+        </div>
+        <div class="section-content" id="content-introduction">
+            <h2>Recurring buffs and debuffs</h2>
+            <div class="content-wrap">
+                <div class="info-box info-box-debuff">
+                    <h3>Final Shape Looming/Imminent End/The Final Shape</h3>
+                    <div class="info-box-content-wrap">
+                        <p>Countdown timer debuff present at the top of the screen in every encounter.</p>
+                        <hr>
+                        <ul class="info">
+                            <li>Final Shape Looming: Substratum, Dissipation and Repository</li>
+                            <li>Imminent End: Verity</li>
+                            <li>The Final Shape: Zenith</li>
+                        </ul>
+                        <hr>
+                        <ul class="features">
+                            <li>If the countdown ends, it will wipe the entire fireteam</li>
+                            <li>The max timer is different for every encounter</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="info-box info-box-buff">
+                    <h3>Resonance</h3>
+                    <div class="info-box-content-wrap">
+                        <p>
+                            Resonance is the main mechanic buff for the first three encounters of the raid.
+                        </p>
+                        <hr>
+                        <ul class="features">
+                            <li>Stackable up to x3. Picking up a 4th stack will kill you</li>
+                            <li>1 minute 30 seconds debuff timer. If the timer ends you die</li>
+                            <li>Picking up a stack will reset the debuff timer</li>
+                            <li>Using one resonance to close a resonant conductor will reset the debuff timer</li>
+                            <li>Each stack dunked at a resonant altar will increase the Final Shape Looming timer by 20 seconds</li>
+                            <li>There are three different types of resonance: Pyramidal, Spherical and Hexahedron</li>
+                            <li>Picking up a resonance will overwrite your entire stack to the last picked up resonance type</li>
+                        </ul>
+                        <hr>
+                        <h4>Types of Resonance</h4>
+                        <div id="resonance-grid">
+                            <div>
+                                <span>Pyramidal Resonance</span>
+                                <span class="res-grid-info-wrap">Referred to as <span class="res-grid-info yellowinf">T</span>riangle</span>
+                                <img src="./resources/images/image_tres.png"/>
+                            </div>
+                            <div>
+                                <span>Spherical Resonance</span>
+                                <span class="res-grid-info-wrap">Referred to as <span class="res-grid-info yellowinf">C</span>ircle</span>
+                                <img src="./resources/images/image_cres.png"/>
+                            </div>
+                            <div>
+                                <span>Hexahedron Resonance</span>
+                                <span class="res-grid-info-wrap">Referred to as <span class="res-grid-info yellowinf">S</span>quare</span>
+                                <img src="./resources/images/image_sres.png"/>
+                            </div>
+                        </div>
+                        <hr>
+                        <ul class="info">
+                            <li>A variant of the resonance buff is featured in the last encounter.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="h2-end"></div>
+            <h2>Recurring Mechanic Elements</h2>
+            <div class="content-wrap">
+                <div class="info-box">
+                    <h3>Resonant Altar</h3>
+                    <div class="info-box-content-wrap">
+                        <img class="info-box-top-img" src="./resources/images/image_resonant_chest.png"/>
+                        <hr>
+                        <p>Interactable chest linked to the resonance mechanic.</p>
+                        <hr>
+                        <ul class="features">
+                            <li>You can only interact with it if you have resonance stacks</li>
+                            <li>Used to dunk your resonance to increase the Final Shape Looming debuff timer</li>
+                            <li>It will only spawn after all resonant conductors are closed and despawn once every member of the fireteam dunks their resonance in it</li>
+                        </ul>
+                        <hr>
+                        <ul class="warnings">
+                            <li>The first guardian dunk will lock out the rest of the fireteam from dunking resonance for a few seconds. Unclear if it is a bug or intended behaviour</li>
+                            <li>Sometimes dunking will not get rid of all your stacks. Make sure the resonance debuff is gone before assuming you are done with your resonance dunking</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <h3>Resonant Plates</h3>
+                    <div class="info-box-content-wrap">
+                        <img class="info-box-top-img" src="./resources/images/image_resonant_plate.png"/>
+                        <hr>
+                        <p>
+                            Resonant plates are the co-op mechanic used to generate resonance on the first three encounters of the raid.
+                        </p>
+                        <hr>
+                        <ul class="features">
+                            <li>To generate resonance we will always use two resonant plates: a <span class="yellowinf">Starting plate</span> and a <span class="yellowinf">Closing plate</span>. Both assigned to one fireteam member each</li>
+                            <li>The Starting plate and the Closing plate are connected by a dark orange wire</li>
+                            <li>A pair of plates will be deactivated by default at the start of every encounter. The condition to activate them will depend on the encounter</li>
+                            <li>When a pair of plates is activated the Starting plate will have an orange glow</li>
+                        </ul>
+                        <hr>
+                        <h4>Plates Mechanics</h4>
+                        <p>
+                            Stepping on an activated <span class="yellowinf">Starting plate</span> will send the orange glow via the wire to the <span class="yellowinf">Closing plate</span>.
+                            <br><br>
+                            When the glow reaches the <span class="yellowinf">Closing plate</span> a shrinking orange glow circle will appear. Stepping on the plate before the circle completely shrinks will start a <span class="yellowinf">Plate Chain</span> and send the glow back to the <span class="yellowinf">Starting Plate</span>, which will now act the same as the <span class="yellowinf">Closing Plate</span> when the glow reaches it.
+                            <br><br>
+                            For every correctly (before the circle closes) stepped on plate a <span class="yellowinf">Set of Resonance</span> will spawn. The amount and type of resonance in a <span class="yellowinf">Set of Resonance</span> are different for every encounter. Three <span class="yellowinf">Sets of Resonance</span> is the max amount of resonance needed for an encounter.
+                            <br><br>
+                            Stepping too early (before the glow reaches the plate) or too late (after the circle completely shrinks) onto a plate will break the <span class="yellowinf">Plate Chain</span>. 
+                            <br><br>
+                            The consequence of breaking a <span class="yellowinf">Plate Chain</span> is different for every encounter.
+                        </p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <h3>Resonant Conductor</h3>
+                    <div class="info-box-content-wrap">
+                        <img class="info-box-top-img" src="./resources/images/image_resonant_conductor.png"/>
+                        <p>The resonant conductor is the end goal of the plates mechanics.</p>
+                        <ul class="features">
+                            <li>It is always next to the Closing Plate</li>
+                            <li>The goal of the member of the fireteam assigned to the Closing Plate is to close the conductor</li>
+                            <li>A conductor only closes with one specific resonance type. Using the wrong resonance type to close a conductor will wipe the entire fireteam</li>
+                            <li>To close a conductor a guardian needs to shoot the glowing resonance inside the conductor while having at least x1 resonance stack. If done correctly the conductor will show damage numbers. The next time the Closing Plate is correctly stepped on (shrinking circle) the conductor will close and the guardian will lose a resonance stack</li>
+                            <h4>States</h4>
+                            <ul class="info">
+                                <li>Deactivated: The pair of plates it is linked to are deactivated</li>
+                                <li>Activated: The pair of plates is activated. The conductor is open and it shows the resonance type it needs to close.</li>
+                                <li>Ready to close: Conductor has been shot and its resonance glows a bit brighter than their ‘Activated’ state.</li>
+                                <li>Closed: The entire conductor has a bright, light orange glow. The plates it is linked to deactivate.</li>
+                            </ul>                        
+                        </ul>
+                    </div>
+                </div>
+                <div class="info-box info-box-example">
+                    <h3>Example: Resonance Generation and Conductor Closing</h3>
+                    <div class="info-box-content-wrap">
+                        <ul class="numbered">
+                            <li>When a pair of plates are activated and the <span class="yellowinf">Starting Plate</span> is glowing the Starter Guardian will step on their plate</li>
+                            <li>When the glow reaches the <span class="yellowinf">Closing Plate</span> the Closer Guardian will step on the plate while the glowing circle is shrinking, starting a <span class="yellowinf">Plate Chain</span> and spawning the first <span class="yellowinf">Set of Resonance</span>. The glow will bounce back to the <span class="yellowinf">Starting Plate</span></li>
+                            <li>When the glow reaches the <span class="yellowinf">Starting Plate</span> the Starter Guardian will step on the plate while the glowing circle is shrinking, spawning the second <span class="yellowinf">Set of Resonance</span>. The glow will bounce back to the <span class="yellowinf">Closing Plate</span></li>
+                            <li>When the glow reaches the <span class="yellowinf">Closing Plate</span> the Closer Guardian will step onto the plate while the glowing circle is shrinking, spawning the last <span class="yellowinf">Set of Resonance</span>. The glow will bounce back to the <span class="yellowinf">Starting Plate</span></li>
+                            <li>Ideally both Guardians would pick up the spawned resonance between plate bounces and keep the <span class="yellowinf">Plate Chain</span> alive until all resonance has been picked up even if no more <span class="yellowinf">Resonance Sets</span> will spawn</li>
+                            <li>When both guardians have picked up all their corresponding spawned resonance, the Closer Guardian will shoot the <span class="yellowinf">Resonant Conductor</span>, setting it to its ‘Ready to Close’ state. When the glow bounces back to the <span class="yellowinf">Closing Plate</span> the Closer Guardian will correctly step on it, closing the <span class="yellowinf">Resonant Conductor</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="h2-end content-end"></div>
+        </div>
+
+        <!-- TRAVERSAL I -->
+        <div class="main-header-background" id="header-traversali">
+            <div class="header-top-pattern"></div>
+            <img class="header-top-flag" src="./resources/images/flag_traversali.svg"/>
+            <div class="header-bottom-pattern"></div>
+            <h1>TRAVERSAL I</h1>
+        </div>
+        <div class="section-content" id="content-traversali">
+            <h2>Bonus Rooms</h2>
+            <div class="content-wrap">
+                <p class="paragraph">
+                    Shortly after the first platforming section you will enter the monolith and get to a room with a set of stairs on each side that lead to a wall that has eight columns of five resonance symbols each. 
+                    <br></br>
+                    Every column is the same if you restart the raid except for the third one. The third column is the one you want to pay attention to and take notes of its symbols <b><u>FROM BOTTOM TO TOP</u></b>. Each of this symbols will be the resonance used to close the conductor in its corresponding bonus room.
+                    <br>
+                    <img src="./resources/images/image_bonus_rooms.png">
+                    Using the wrong resonance to close any of the conductors will lock every subsequent room, preventing you from getting the rewards.                    
+                </p>
+                <div class="info-box">
+                    <h3>Room Rewards</h3>
+                    <div class="info-box-content-wrap">
+                        <ul class="numbered">
+                            <li>Deepsight weapon chest (1/3)</li>
+                            <li>Raid mod after defeating The Witness (LOCKED)</li>
+                            <li>Deepsight weapon chest (2/3)</li>
+                            <li>Lore entry after defeating The Witness (LOCKED)</li>
+                            <li>Deepsight weapon chest (3/3)</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="paragraph">
+                    Every secret room has a pair of active plates and a conductor. Generate resonance using the plates and close the conductor with the corresponding resonance to complete the room.
+                </p>
+            </div>
+            <div class="h2-end"></div>
+            <h2>Secret Room #1</h2>
+            <div class="content-wrap">
+                <video class="tutorial-video" controls>
+                    <source src="./resources/videos/sr1.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <a class="attribution-link" href="https://www.youtube.com/@Spazmattic" target="_blank">
+                    <div class="attribution-wrap">
+                        <div class="attribution">
+                            Original Video by Spazmattic
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="h2-end"></div>
+            <h2>Lore Collectible #1</h2>
+            <div class="content-wrap">
+                <video class="tutorial-video" controls>
+                    <source src="./resources/videos/lc1.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <a class="attribution-link" href="https://www.youtube.com/@Spazmattic" target="_blank">
+                    <div class="attribution-wrap">
+                        <div class="attribution">
+                            Original Video by Spazmattic
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="h2-end"></div>
+            <h2>Secret Room #2</h2>
+            <div class="content-wrap">
+                <ul class="locked">
+                    <li>UNLOCK: Complete the static triumph or weekly challenge for the second encounter</li>
+                </ul>
+                <video class="tutorial-video" controls>
+                    <source src="./resources/videos/sr2.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <a class="attribution-link" href="https://www.youtube.com/@Spazmattic" target="_blank">
+                    <div class="attribution-wrap">
+                        <div class="attribution">
+                            Original Video by Spazmattic
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="h2-end content-end"></div>
+        </div>
+
+        <!-- SUBSTRATUM -->
+        <div class="main-header-background" id="header-substratum">
+            <div class="header-top-pattern"></div>
+            <img class="header-top-flag" src="./resources/images/flag_substratum.svg"/>
+            <div class="header-bottom-pattern"></div>
+            <h1>SUBSTRATUM</h1>
+        </div>
+        <div class="section-content" id="content-substratum">
+            <div class="content-wrap em-margin-top">
+                <div class="em-margin-bottom">
+                    <div class="encounter-info-grid">
+                        <div class="encounter-info-container">
+                            <span>Enemies</span>
+                            <div class="encounter-info-grid-6">
+                                <div class="enemy-column">
+                                    <div class="enemy-wrap">
+                                        <img class="enemy-image" src="./resources/images/image_vex.jpg"/>
+                                    </div>
+                                </div>
+                                <div class="enemy-column">
+                                    <div class="enemy-wrap">
+                                        <img class="enemy-image" src="./resources/images/image_attendant.jpg"/>
+                                    </div>
+                                </div>
+                                <div class="enemy-column">
+                                    <div class="enemy-wrap">
+                                        <img class="enemy-image" src="./resources/images/image_weaver.jpg"/>
+                                    </div>
+                                </div>
+                                <div class="enemy-column">
+                                    <div class="enemy-wrap">
+                                        <img class="enemy-image" src="./resources/images/image_subjugator.jpg"/>
+                                    </div>
+                                </div>
+                                <div class="enemy-column">
+                                    <div class="enemy-wrap">
+                                        <img class="enemy-image" src="./resources/images/image_tormentor.jpg"/>
+                                    </div>
+                                </div>
+                                <div class="enemy-column">
+                                    <div class="enemy-wrap">
+                                        <img class="enemy-image" src="./resources/images/image_overload.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="encounter-info-container">
+                            <span>Loot</span>
+                            <div class="encounter-info-grid-5">
+                                <div class="loot-column">
+                                    <a href="https://www.light.gg/db/items/1258168956/imminence/" target="_blank">
+                                        <div class="loot-wrap">
+                                            <img class="loot-image" src="./resources/images/image_smg.jpg"/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="loot-column">
+                                    <a href="https://www.light.gg/db/items/1770490683/non-denouement/" target="_blank">
+                                        <div class="loot-wrap">
+                                            <img class="loot-image" src="./resources/images/image_bow.jpg"/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="loot-column">
+                                    <a href="https://www.light.gg/db/items/859869931/nullify/" target="_blank">
+                                        <div class="loot-wrap">
+                                            <img class="loot-image" src="./resources/images/image_pulse.jpg"/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="loot-column">
+                                    <div class="loot-wrap non-weapon">
+                                        <img class="loot-image" src="./resources/images/image_gloves.jpg"/>
+                                    </div>
+                                </div>
+                                <div class="loot-column">
+                                    <div class="loot-wrap non-weapon">
+                                        <img class="loot-image" src="./resources/images/image_chest.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="encounter-info-container em-margin-v">
+                        <span>End Goal</span>
+                        <p>
+                            Spawn the resonant chest and dunk enough resonance into it to survive the Final Shape Looming three times.
+                        </p>
+                    </div>
+                    <div class="encounter-info-container em-margin-v">
+                        <span>Final Shape Looming</span>
+                        <p>
+                            4 minutes 15 seconds
+                        </p>
+                    </div>
+                    <div class="encounter-info-container">
+                        <span>Set of Resonance</span>
+                        <p>
+                            Three Triangle resonances:
+                            <br><br>
+                            One in the Starting Plate room for the Starter Guardian
+                            <br><br>
+                            One in the Closing Plate room for the Closer Guardian
+                            <br><br>
+                            One in the large central room for the Ad-Clearer Guardian
+                        </p>
+                    </div>
+                    <div class="encounter-info-container em-margin-top">
+                        <span>Plate Chain Break</span>
+                        <p>
+                            Mini-Boss Subjugator will spawn in the Starting Plate room, locking the Plates until it is dead
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <h2>Enviroment</h2>
+            <div class="content-wrap">
+                <p class="paragraph">
+                    The encounter takes place in a total of nine rooms: a large central room and eight smaller rooms.
+                    <br></br>
+                    The large central room has a resonant chest at the beginning of the encounter and a door on each wall and in each corner that leads to one of the smaller rooms.
+                    <br><br>
+                    Each of the smaller rooms has one resonant plate and one resonant conductor. The resonant plate has two wires that connect it to the plates in the adjacent smaller rooms.
+                    <br>
+                    <img src="./resources/images/image_enviroment_substratum.png">
+                </p>
+            </div>
+            <div class="h2-end"></div>
+            <h2>Roles</h2>
+            <div class="content-wrap">
+                <div id="substratum-roles-grid">
+                    <div class="substratum-roles-column">
+                        <span class="role-title title-red">Wall Team</span>
+                        <ul class="roles">
+                            <li>Starter</li>
+                            <li>Closer</li>
+                            <li>Ad-Clearer</li>
+                        </ul>
+                    </div>
+                    <div class="substratum-roles-column">
+                        <span class="role-title title-green">Corner Team</span>
+                        <ul class="roles">
+                            <li>Starter</li>
+                            <li>Closer</li>
+                            <li>Ad-Clearer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="h2-end"></div>
+            <h2>Encounter Explanation</h2>
+            <div class="content-wrap">
+                <div class="info-box">
+                    <h3>Witness Arm: Triangle</h3>
+                    <div class="info-box-content-wrap">
+                        <img class="info-box-top-img" src="./resources/images/image_arm_triangle.png"/>
+                        <hr>
+                        <p>The arm will target one guardian and spawn a glowing triangular attack that explodes after a few seconds, damaging every player inside it.</p>
+                    </div>
+                </div>
+                <p class="paragraph">
+                    When every fireteam member is in the center room all the doors leading to the smaller rooms will close. If someone picks up the triangle resonance and dunks it in the resonant chest, the chest will despawn, a triangle witness arm will spawn, and the encounter starts. 
+                    <br><br>
+                    Two of the doors will open, one in a wall and the other in a corner of that same wall. Vex suplicants will come out of the rooms those doors lead to.
+                    The <span class="red">Wall Team</span> will enter the the room that the wall door leads to, and the <span class="green">Corner team</span> will enter the room the corner door leads to. These two doors will close.
+                    <br><br>
+                    The teams will be moving in opposite directions clearing all the ads inside their rooms and helping the other team progress.
+                    When one of the teams (Team A) kills a vex <span class="blue">minotaur</span> in their room a vex <span class="blue">hydra</span> will spawn in the room the other team (Team B) is in. When Team B kills that <span class="blue">hydra</span> the door that Team A needs to progress through will open.
+                    <br><br>
+                    <img src="./resources/images/image_substratum_enc1.png">
+                    <br><br>
+                    Eventually one of the teams will have an <span class="yellow">Overload Champion</span> spawn in one of their rooms, the earliest a team can find the <span class="yellow">Overload Champion</span> is the third room. If that team is too slow to kill it, the other team will have their <span class="yellow">Overload Champion</span> spawn in their fourth room.
+                    <br><br>
+                    When the <span class="yellow">Overload Champion</span> is dead all the doors that lead to the center room will open and a <span class="yellow">Boss Tormentor</span> will spawn in it. Killing the <span class="yellow">Tormentor</span> will activate the plate in the room the <span class="yellow">Overload Champion</span> was killed, this is the first of two <span class="yellow">Starting Plates</span> we need to complete one cycle of the encounter. The <span class="yellow">Closing Plate</span> that pairs with that <span class="yellow">Starting Plate</span> will be in one of the rooms connected to it by wires, next to an active <span class="yellow">Resonant Conductor</span>.
+                    <br><br>
+                    Killing the <span class="yellow">Tormentor</span> will also close all the doors again and a new set of two doors (Wall and Corner) will open. Both teams will repeat the same process to progress through the rooms, killing <span class="blue">minotaurs</span>, <span class="blue">hydras</span> and eventually the <span class="yellow">Overload Champion</span>. The team that does not spawn the <span class="yellow">Overload Champion</span> first (the one that would spawn it in their fourth room instead of their third) will most likely come across the first active <span class="yellow">Starting Plate</span> or the <span class="yellow">Resonant Conductor</span> next to the <span class="yellow">Closing Plate</span> it leads to; this will be that team's pair of plates. After the other team kills the <span class="yellow">Overload Champion</span> a new Tormentor will spawn. Killing it will activate the plate in the room where the second <span class="yellow">Overload Champion</span> died, this will be the second set of <span class="yellow">Starting Plate</span> and <span class="yellow">Closing Plate/Conductor</span> needed to complete the cycle. The Team that killed the <span class="yellow">Overload Champion</span> in that room will be in charge of dealing with this set of plates.
+                    <br><br>
+                    <img src="./resources/images/image_substratum_enc2.png">
+                    <br><br>
+                    After the second <span class="yellow">Tormentor</span> is dead and each team knows where their set of <span class="yellow">Starting</span> and <span class="yellow">Closing Plates</span> is, it is time to start the <span class="yellow">Resonace</span> generation with the plates.
+                    The <span class="yellow">Starter Guardian</span> in each team will step on the <span class="yellow">Starting Plate</span>, the <span class="yellow">Closer Guardian</span> will return the ping and start the <span class="yellow">Plate Chain</span>. Both will keep the chain alive until all <span class="yellow">Sets of Resonance</span> (three total) have spawned.
+                    <br><br>
+                    The Ad-Clearers are free to pick up their resonance whenever they want from the center room. The Starter and Closer Guardians will need to pick up theirs between Plate pings, being careful not to neglect the plate for too long, or they may break the <span class="yellow">Plate Chain</span>.
+                    <br><br>
+                    When everyone on a team has picked up all their resonance (everyone should have x3 resonance), it is time to close the <span class="yellow">conductor</span>, the <span class="yellow">Closer Guardian</span> will shoot the triangle in the open conductor and successfully return a plate ping to close it.
+                    <br><br>
+                    When both teams (<span class="red">Wall</span> and <span class="green">Corner</span>) have closed their <span class="yellow">Conductor</span> a Mini-Boss Subjugator will spawn in the center room alongside a few extra ads. Killing every enemy in the room will respawn the <span class="yellow">Resonant Chest</span>, allowing everyone in the fireteam to dunk their resonance. 
+                    <br><br>
+                    Once everyone has dunked their resonance, the first cycle of three needed to end the encounter is complete.
+                    <br><br>
+                    <img src="./resources/images/image_substratum_enc3.png">
+                    <br><br>
+                    The other two cycles will be exactly the same.
+                </p>
+            </div>
+            <div class="h2-end content-end"></div>
+        </div>
+
+        <!-- TRAVERSAL II -->
+        <div class="main-header-background" id="header-traversalii">
+            <div class="header-top-pattern"></div>
+            <img class="header-top-flag" src="./resources/images/flag_traversalii.svg"/>
+            <div class="header-bottom-pattern"></div>
+            <h1>TRAVERSAL II</h1>
+        </div>
+        <div class="section-content" id="content-traversalii">
+            <h2>Secret Room #3</h2>
+            <div class="content-wrap">
+                <video class="tutorial-video" controls>
+                    <source src="./resources/videos/sr3.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <a class="attribution-link" href="https://www.youtube.com/@Spazmattic" target="_blank">
+                    <div class="attribution-wrap">
+                        <div class="attribution">
+                            Original Video by Spazmattic
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="h2-end content-end"></div>
+        </div>
+        
+        <!-- DISSIPATION -->
+        <div class="main-header-background" id="header-dissipation">
+            <div class="header-top-pattern"></div>
+            <img class="header-top-flag" src="./resources/images/flag_dissipation.svg"/>
+            <div class="header-bottom-pattern"></div>
+            <h1>DISSIPATION</h1>
+        </div>
+        <div class="section-content" id="content-dissipation">
+            <div class="content-wrap em-margin-top">
+                <div class="em-margin-bottom">
+                    <div class="encounter-info-grid">
+                        <div class="encounter-info-container">
+                            <span>Enemies</span>
+                            <div class="encounter-info-grid-2">
+                                <div class="enemy-column">
+                                    <div class="enemy-wrap">
+                                        <img class="enemy-image" src="./resources/images/image_taken.jpg"/>
+                                    </div>
+                                </div>
+                                <div class="enemy-column">
+                                    <div class="enemy-wrap">
+                                        <img class="enemy-image" src="./resources/images/image_attendant.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="encounter-info-container">
+                            <span>Loot</span>
+                            <div class="encounter-info-grid-5">
+                                <div class="loot-column">
+                                    <a href="https://www.light.gg/db/items/1258168956/imminence/" target="_blank">
+                                        <div class="loot-wrap">
+                                            <img class="loot-image" src="./resources/images/image_smg.jpg"/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="loot-column">
+                                    <a href="https://www.light.gg/db/items/535198113/forthcoming-deviance/" target="_blank">
+                                        <div class="loot-wrap">
+                                            <img class="loot-image" src="./resources/images/image_glaive.jpg"/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="loot-column">
+                                    <a href="https://www.light.gg/db/items/1770490683/non-denouement/" target="_blank">
+                                        <div class="loot-wrap">
+                                            <img class="loot-image" src="./resources/images/image_bow.jpg"/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="loot-column">
+                                    <div class="loot-wrap non-weapon">
+                                        <img class="loot-image" src="./resources/images/image_helm.jpg"/>
+                                    </div>
+                                </div>
+                                <div class="loot-column">
+                                    <div class="loot-wrap non-weapon">
+                                        <img class="loot-image" src="./resources/images/image_class.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="encounter-info-container em-margin-v">
+                        <span>End Goal</span>
+                        <p>
+                            Spawn the resonant chest and dunk enough resonance in it to survive the Final Shape Looming and kill the boss
+                        </p>
+                    </div>
+                    <div class="encounter-info-container em-margin-v">
+                        <span>Final Shape Looming</span>
+                        <p>
+                            3 minutes
+                        </p>
+                    </div>
+                    <div class="encounter-info-container">
+                        <span>Set of Resonance</span>
+                        <p>
+                            Two resonances:
+                            <br><br>
+                            One Circle on one side of the area
+                            <br><br>
+                            One Triangle on the other side of the area
+                        </p>
+                    </div>
+                    <div class="encounter-info-container em-margin-top">
+                        <span>Plate Chain Break</span>
+                        <p>
+                            Mini-Boss will spawn near the closing plate, locking the Plates until it is dead
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <h2>Enviroment</h2>
+            <div class="content-wrap">
+                <p class="paragraph">
+                    Left, Mid, and Right areas with structures, a Starting Plate at the top of the structure and a Closing Plate at the bottom, right next to the conductor. 
+                    <br></br>
+                    All the areas are connected to a large square arena with a taken blight in the center.
+                    <br>
+                    <img src="./resources/images/image_enviroment_dissipation.png">
+                </p>
+            </div>
+            <div class="h2-end"></div>
+            <h2>Roles</h2>
+            <div class="content-wrap">
+                <div id="dissipation-roles-grid">
+                    <div class="dissipation-roles-column">
+                        <span class="role-title title-red">Left Area</span>
+                        <div class="dissipation-roles-ghosts">
+                            <img src="./resources/images/icon_ghost.svg"/>
+                            <img src="./resources/images/icon_ghost.svg"/>
+                        </div>
+                    </div>
+                    <div class="dissipation-roles-column">
+                        <span class="role-title title-green">Mid Area</span>
+                        <div class="dissipation-roles-ghosts">
+                            <img src="./resources/images/icon_ghost.svg"/>
+                            <img src="./resources/images/icon_ghost.svg"/>
+                        </div>
+                    </div>
+                    <div class="dissipation-roles-column">
+                        <span class="role-title title-yellow">Right Area</span>
+                        <div class="dissipation-roles-ghosts">
+                            <img src="./resources/images/icon_ghost.svg"/>
+                            <img src="./resources/images/icon_ghost.svg"/>
+                        </div>
+                    </div>
+                </div>
+                <p class="paragraph">
+                    Each team will have a Starter and a Closer. You can decide with your partner if you want to assign roles or leave it to the <span class="yellowinf">Call to Reckoning</span> RNG.
+                </p>
+            </div>
+            <div class="h2-end"></div>
+            <h2>Encounter Explanation</h2>
+            <div class="content-wrap">
+                <div class="info-box">
+                    <h3>Witness Arm: Circle</h3>
+                    <div class="info-box-content-wrap">
+                        <img class="info-box-top-img" src="./resources/images/image_arm_circle.png"/>
+                        <hr>
+                        <p>
+                            The arm will spawn glowing circular attacks at a fixed location, darkness projectiles will slowly approach the circle, damaging every player that is inside it when they reach it.
+                        </p>
+                    </div>
+                </div>
+                <div class="info-box info-box-buff">
+                    <h3>Stolen Valor</h3>
+                    <div class="info-box-content-wrap">
+                        <p>
+                            With the introduction of the Circle resonance in this encounter, a new buff is also introduced.
+                            <br><br>
+                            When one of the Conductors is active it will show an undefined rotating shape instead of the resonance type it needs to close. To know which shape closes the Conductor, you will need to have the Stolen Valor buff.
+                            <br><br>
+                            If you have the Stolen Valor buff, instead of the undefined rotating shape you will see either a triangle resonance shape or a circle resonance shape. Whichever you see is the one needed to close the Conductor.
+                            <br><br>
+                            You don't need Stolen Valor to close the conductor with the correct shape; it is just an informative buff.
+                        </p>
+                    </div>
+                </div>
+                <p class="paragraph">
+                    Each pair of Guardians will go to their areas. When everyone is ready, shoot the taken blight in the center of the square arena to start the encounter.
+                    <br><br>
+                    Enemies will spawn on both sides of an area. When the first set of enemies is dead, another set will spawn on one of the sides, alongside a <span class="blue">taken Mini-Boss</span>. The Mini-Boss will be different for each area:
+                </p>
+                    <div class="dissipation-miniboss-grid">
+                        <div>
+                            <span class="red">Left: Taken Wizard</span>
+                            <img src="./resources/images/image_dissipation_mb1.png"/>
+                        </div>
+                        <div>
+                            <span class="green">Mid: Taken Phalanx</span>
+                            <img src="./resources/images/image_dissipation_mb2.png"/>
+                        </div>
+                        <div>
+                            <span class="yellow">Right: Taken Ogre</span>
+                            <img src="./resources/images/image_dissipation_mb3.png"/>
+                        </div>
+                    </div>
+                <p class="paragraph">
+                    While killing the <span class="blue">Mini-Boss</span>, one of the Guardians in the team will randomly receive the <span class="yellow">Call to Reckoning</span> buff. After the Mini-Boss is dead, the pair of plates and the conductor will activate.
+                </p>
+                <div class="info-box info-box-buff">
+                    <h3>Call to Reckoning</h3>
+                    <div class="info-box-content-wrap">
+                        <p>
+                            <span class="yellowinf">Call to Reckoning</span> is the pre-buff for <span class="yellowinf">Stolen Valor</span>. 
+                            <br><br>
+                            To transform your <span class="yellowinf">Call to Reckoning</span> into <span class="yellowinf">Stolen Valor</span> all three selected guardians will need to have a small fight against the boss in the square arena.
+                            <br><br>
+                            When all three <span class="yellowinf">Called</span> guardians are ready, they will enter the boss arena, a weak spot on the boss's head will appear. Breaking the weak spot will spawn a small taken blight on top of the boss's head and bigger taken blights in the Square Arena and the Left, Mid, and Right areas. 
+                            <br><br>
+                            When all bigger taken blights have been destroyed the smaller blight on the boss head will disappear, the weak spot will appear again and destroying it for a second time will turn all the <span class="yellowinf">Call to Reckoning</span> buffs to <span class="yellowinf">Stolen Valor</span>.
+                        </p>
+                    </div>
+                </div>
+                <p class="paragraph">
+                    Depending on when you want to handle the <span class="yellow">Call to Reckoning</span> buff, there are two strategies to complete the encounter.
+                </p>
+                <div class="info-box info-box-example">
+                    <h3>Strat A: Plates Before Reckoning</h3>
+                    <div class="info-box-content-wrap">
+                        <p>
+                            When one of the guardians gets the <span class="yellowinf">Call to Reckoning</span> buff, they will ignore it for now. 
+                            <br><br>
+                            When the Mini-Boss is dead, one of the Guardians will go to the Starting Plate, and the other one will stay at the Closing Plate. They will spawn all three resonance sets (one Triangle and one Circle for each set, making a total of six resonance, three for each Guardian in the team) and leave the resonance where they spawn without picking it up yet. All three teams should be doing this simultaneously.
+                            <br><br>
+                            When all teams are done spawning the resonace, the Called Guardian in each team will go to the boss fight to transform their buff. 
+                            <br><br>
+                            The Guardian that was not called will kill the Mini-Boss that respawns after the <span class="yellowinf">Plate Chain</span> breaks.
+                            <br><br>
+                            Once the Called Guardian has <span class="yellowinf">Stolen Valor</span>, they will go back to their area, take a look at the conductor, communicate to their partner which resonance type they need to close it, pick up all three of that resonance type, go to the Closing Plate and wait for the non-Called Guardian to ping from the Starting Plate so they can close.
+                            <br><br>
+                            <span class="greeninf">Pros</span>: Pinging the plates without having to worry about ads or picking up resonance in time between ping makes the encounter easier.
+                            <br><br>
+                            <span class="redinf">Cons</span>: If one or more of the teams is too slow with the plates, it may result in a delay for the Called Guardians' boss fight, making the mechanics portion of the encounter a bit slower.
+                        </p>
+                    </div>
+                </div>
+                <div class="info-box info-box-example">
+                    <h3>Strat B: Plates After Reckoning</h3>
+                    <div class="info-box-content-wrap">
+                        <p>
+                            As soon as the Guardian in each team gets the <span class="yellowinf">Call to Reckoning</span> buff, they go to the center arena and fight the boss to transform the buff into <span class="yellowinf">Stolen Valor</span>.
+                            <br><br>
+                            When they are finished with the fight, they will return to their area, take a look at the conductor, communicate which resonance they need to close the Conductor to their partner and stay at the bottom plate; they will be the Closer. 
+                            <br><br>
+                            The Guardian without <span class="yellowinf">Stolen Valor</span> will go to the top of the structure; they will be the Starter.
+                            <br><br>
+                            Both of them start pinging the plates to spawn the three resonances sets (one Triangle and one Circle for each set, making a total of six resonance, three for each Guardian in the team), pick up the resonance between pings and close the conductor with the correct resonance when all of it has been picked up.
+                            <br><br>
+                            <span class="greeninf">Pros</span>: This strategy is faster.
+                            <br><br>
+                            <span class="redinf">Cons</span>: Dealing with the enemies (specially the attendants) while pinging plates and trying to pick up resonance between pings makes the encounter considerably harder.
+                        </p>
+                    </div>
+                </div>
+                <p class="paragraph">
+                    After all three teams close their Conductor, the resonant chest will spawn in the side of the square arena not connected to any of the areas. Every Guardian should dunk their resonance to extend the timer and get ready to fight the boss.
+                    <br><br>
+                    The damage phase starts when the square arena walls glow and lasts around 30 seconds. After that, if the boss has not reached Final Stand, the wall's glow will dim and a new cycle of mechanics will begin.
+                    <br><br>
+                    <img src="./resources/images/image_dissipation_enc1.png">
+                    <br><br>
+                    On Final Stand, the damage phase time will extend, and extra enemies will spawn in the boss arena until it is dead.
+                </p>
+            </div>
+            <div class="h2-end content-end"></div>
+        </div>
+
+        <!-- TRAVERSAL III -->
+        <div class="main-header-background" id="header-traversaliii">
+            <div class="header-top-pattern"></div>
+            <img class="header-top-flag" src="./resources/images/flag_traversaliii.svg"/>
+            <div class="header-bottom-pattern"></div>
+            <h1>TRAVERSAL III</h1>
+        </div>
+        <div class="section-content" id="content-traversaliii">
+            <h2>Lore Collectible #2</h2>
+            <div class="content-wrap">
+                <video class="tutorial-video" controls>
+                    <source src="./resources/videos/lc2.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <a class="attribution-link" href="https://www.youtube.com/@Spazmattic" target="_blank">
+                    <div class="attribution-wrap">
+                        <div class="attribution">
+                            Original Video by Spazmattic
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="h2-end"></div>
+            <h2>Secret Room #4</h2>
+            <div class="content-wrap">
+                <ul class="locked">
+                    <li>UNLOCK: Complete all the static triumphs or weekly challenges</li>
+                </ul>
+                <video class="tutorial-video" controls>
+                    <source src="./resources/videos/sr4.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <a class="attribution-link" href="https://www.youtube.com/@Spazmattic" target="_blank">
+                    <div class="attribution-wrap">
+                        <div class="attribution">
+                            Original Video by Spazmattic
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="h2-end"></div>
+            <h2>Lore Collectible #3</h2>
+            <div class="content-wrap">
+                <video class="tutorial-video" controls>
+                    <source src="./resources/videos/lc3.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <a class="attribution-link" href="https://www.youtube.com/@Spazmattic" target="_blank">
+                    <div class="attribution-wrap">
+                        <div class="attribution">
+                            Original Video by Spazmattic
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="h2-end"></div>
+            <h2>Secret Chest #1</h2>
+            <div class="content-wrap">
+                <video class="tutorial-video" controls>
+                    <source src="./resources/videos/sc1.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <a class="attribution-link" href="https://www.youtube.com/@Skarrow9" target="_blank">
+                    <div class="attribution-wrap">
+                        <div class="attribution">
+                            Original Video by Skarrow9
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="h2-end"></div>
+            <h2>Secret Room #5</h2>
+            <div class="content-wrap">
+                <video class="tutorial-video" controls>
+                    <source src="./resources/videos/sr5.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <a class="attribution-link" href="https://www.youtube.com/@Spazmattic" target="_blank">
+                    <div class="attribution-wrap">
+                        <div class="attribution">
+                            Original Video by Spazmattic
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="h2-end"></div>
+        </div>
+
+        <!-- REPOSITORY -->
+        <div class="main-header-background" id="header-repository">
+            <div class="header-top-pattern"></div>
+            <img class="header-top-flag" src="./resources/images/flag_repository.svg"/>
+            <div class="header-bottom-pattern"></div>
+            <h1>REPOSITORY</h1>
+        </div>
+        <div class="section-content" id="content-repository">
+            <div class="content-wrap em-margin-top">
+                <div class="em-margin-bottom">
+                    <div class="encounter-info-grid">
+                        <div class="encounter-info-container">
+                            <span>Enemies</span>
+                            <div class="encounter-info-grid-5">
+                                <div class="enemy-column">
+                                    <div class="enemy-wrap">
+                                        <img class="enemy-image" src="./resources/images/image_cabal.jpg"/>
+                                    </div>
+                                </div>
+                                <div class="enemy-column">
+                                    <div class="enemy-wrap">
+                                        <img class="enemy-image" src="./resources/images/image_husk.jpg"/>
+                                    </div>
+                                </div>
+                                <div class="enemy-column">
+                                    <div class="enemy-wrap">
+                                        <img class="enemy-image" src="./resources/images/image_subjugator.jpg"/>
+                                    </div>
+                                </div>
+                                <div class="enemy-column">
+                                    <div class="enemy-wrap">
+                                        <img class="enemy-image" src="./resources/images/image_tormentor.jpg"/>
+                                    </div>
+                                </div>
+                                <div class="enemy-column">
+                                    <div class="enemy-wrap">
+                                        <img class="enemy-image" src="./resources/images/image_unstop.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="encounter-info-container">
+                            <span>Loot</span>
+                            <div class="encounter-info-grid-5">
+                                <div class="loot-column">
+                                    <a href="https://www.light.gg/db/items/445197843/critical-anomaly/" target="_blank">
+                                        <div class="loot-wrap">
+                                            <img class="loot-image" src="./resources/images/image_sniper.jpg"/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="loot-column">
+                                    <a href="https://www.light.gg/db/items/535198113/forthcoming-deviance/" target="_blank">
+                                        <div class="loot-wrap">
+                                            <img class="loot-image" src="./resources/images/image_glaive.jpg"/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="loot-column">
+                                    <a href="https://www.light.gg/db/items/859869931/nullify/" target="_blank">
+                                        <div class="loot-wrap">
+                                            <img class="loot-image" src="./resources/images/image_pulse.jpg"/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="loot-column">
+                                    <div class="loot-wrap non-weapon">
+                                        <img class="loot-image" src="./resources/images/image_gloves.jpg"/>
+                                    </div>
+                                </div>
+                                <div class="loot-column">
+                                    <div class="loot-wrap non-weapon">
+                                        <img class="loot-image" src="./resources/images/image_class.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="encounter-info-container em-margin-v">
+                        <span>End Goal</span>
+                        <p>
+                            Gather resonance to extend the timer long enough for the fireteam to survive the three rooms
+                        </p>
+                    </div>
+                    <div class="encounter-info-container em-margin-v">
+                        <span>Final Shape Looming</span>
+                        <p>
+                            3 minutes 30 seconds
+                        </p>
+                    </div>
+                    <div class="encounter-info-container">
+                        <span>Set of Resonance</span>
+                        <p>
+                            Two resonances:
+                            <br><br>
+                            One near the Starting Plate
+                            <br><br>
+                            One near the Closing Plate
+                        </p>
+                    </div>
+                    <div class="encounter-info-container em-margin-top">
+                        <span>Plate Chain Break</span>
+                        <p>
+                            Mini-Boss Subjugator will spawn near the closing plate, locking the Plates until it is dead
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <h2>Enviroment</h2>
+            <div class="content-wrap">
+                <p class="paragraph">
+                    The encounter takes place across three different rooms. 
+                    <br></br>
+                    Every room is bigger than the previous one but all of them have the same layout: three starting plates near the entrance and three closing plates next to a conductor near the exit.
+                    <br><br>
+                    Starting Plates are connected to the Closing Plates via the wires, the connections between plates are more scrambled the further the room you are in.
+                    <br>
+                    <img src="./resources/images/image_enviroment_repository.png">
+                </p>
+            </div>
+            <div class="h2-end"></div>
+            <h2>Roles</h2>
+            <div class="content-wrap">
+                <div id="dissipation-roles-grid">
+                    <div class="dissipation-roles-column">
+                        <span class="role-title title-red">Left</span>
+                        <ul class="roles">
+                            <li>Starter</li>
+                            <li>Closer</li>
+                        </ul>
+                    </div>
+                    <div class="dissipation-roles-column">
+                        <span class="role-title title-green">Mid</span>
+                        <ul class="roles">
+                            <li>Starter</li>
+                            <li>Closer</li>
+                        </ul>
+                    </div>
+                    <div class="dissipation-roles-column">
+                        <span class="role-title title-yellow">Right</span>
+                        <ul class="roles">
+                            <li>Starter</li>
+                            <li>Closer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="h2-end"></div>
+            <h2>Encounter Explanation</h2>
+            <div class="content-wrap">
+                <div class="info-box">
+                    <h3>Witness Arm: Square</h3>
+                    <div class="info-box-content-wrap">
+                        <img class="info-box-top-img" src="./resources/images/image_arm_square.png"/>
+                        <hr>
+                        <p>The arm charges and shoots a horizontal darkness beam parallel to the ground, damaging every player that is hit by it.</p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <h3>Resonance Spawns</h3>
+                    <div class="info-box-content-wrap">
+                        <p>The Resonance in a set spawns along the wire that connects two plates. The resonance type will depend on the Starting Plate location.</p>
+                        <hr>
+                        <ul class="features">
+                            <li>Left Starting Plate always spawns Square</li>
+                            <li>Mid Starting Plate always spawns Circle</li>
+                            <li>Right Starting Plate always spawns Triangle</li>
+                        </ul>
+                        <hr>
+                        <h4>First Room</h4>
+                        <ul class="info">
+                            <li>Square: near the Left Starting Plate and the Left Closing Plate</li>
+                            <li>Circle: near the Mid Starting Plate and the Mid Closing Plate</li>
+                            <li>Triangle: near the Right Starting Plate and the Right Closing Plate</li>
+                        </ul>
+                        <hr>
+                        <h4>Second Room</h4>
+                        <ul class="info">
+                            <li>Square: near the Left Starting Plate and the Mid Closing Plate</li>
+                            <li>Circle: near the Mid Starting Plate and the Left Closing Plate</li>
+                            <li>Triangle: near the Right Starting Plate and the Right Closing Plate</li>
+                        </ul>
+                        <hr>
+                        <h4>Third Room</h4>
+                        <ul class="info">
+                            <li>Square: near the Left Starting Plate and the Mid Closing Plate</li>
+                            <li>Circle: near the Mid Starting Plate and the Right Closing Plate</li>
+                            <li>Triangle: near the Right Starting Plate and the Left Closing Plate</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="paragraph">
+                    For this encounter, we will use the <i>Closers Move and Close their own Conductor</i> strategy.
+                </p>
+                <div class="info-box info-box-example">
+                    <h3>Strat: Closers Move/Close Own</h3>
+                    <div class="info-box-content-wrap">
+                        <p>
+                            Starter Players will always ping from the Starting Plate on their side.
+                            <br><br>
+                            Closer Players will always go to the Plate that matches their partner's ping (it will change between rooms).
+                            <br><br>
+                            Closer Guardians will collect the resonance their conductor needs to close from other sides, instead of picking up the resonance that their plate generates and closing another Closer guardian's conductor.
+                        </p>
+                    </div>
+                </div>
+                <p class="paragraph">
+                    When the encounter starts all plates and conductors are deactivated, a <span class="blue">Boss Tormentor</span> will spawn near all the <span class="yellow">Closing Plates</span>, whoever gets the final blow on the <span class="blue">Tormentor</span> will receive the <span class="yellow">Stolen Valor</span> buff needed to know which resonance type closes the Conductor. Therefore, both players in a team should deal with <span class="blue">it</span> together, but the guardian in charge of the <span class="yellow">Starting Plate</span> must ensure that the Closer Guardian is the one to actually kill it.
+                    <br><br>
+                    Once the <span class="blue">Tormentor</span> is dead the plates and conductor on that side will activate. The Starter Guardian will go to the <span class="yellow">Starting Plate</span> on their side and the Closer Guardian will go to the <span class="yellow">Closing Plate</span> that matches that <span class="yellow">Starting Plate</span> ping. 
+                    <br><br>
+                    They will do the usual starting ping and three returning pings to spawn all resonance, but nobody picks it up yet. We will let the <span class="yellow">Plate Chain</span> break to give the Closer Guardian time to go get the resonance they need to close their Conductor, doing this will spawn a <span class="blue">Subjugator</span> near the <span class="yellow">Closing Plate</span>, but the Starter Guardian can easily go there and deal with it alone while their partner is away picking up the correct resonance.
+                    <br><br>
+                    Once the Closer Guardian has their resonance they will go back to their Conductor, the Starter Guardian should have killed the <span class="blue">Subjugator</span> already and returned to their <span class="yellow">Starting Plate</span> to pick up the resonance that spawned near it. When both are ready they will do a last ping to close the Conductor.
+                    <br><br>
+                    When all three sides Conductors are closed the <span class="yellow">Resonant Chest</span> will spawn and all Guardians should deposit their resonance to extend the timer. When everyone is resonance free an <span class="blue">Unstoppable Champion</span> alongside a few more ads will spawn near the exit door, killing it and all the ads will open the exit door.
+                    <br><br>
+                    Repeat the same process for all three rooms. The only difference between rooms is the size and the scrambled Plate pairing.
+                </p>
+                <div class="info-box info-box-example">
+                    <h3>Room Three tips</h3>
+                    <div class="info-box-content-wrap">
+                        <ul class="info">
+                            <li>
+                                All Tormentors spawn very closely together, everyone should focus on killing all of them and whoever gets Stolen Valor should make a general callout of the resonance needed to close the Conductors from Left to Right
+                            </li>
+                            <li>
+                                Since it is the last room, spawning only one set of resonance is enough to close the Conductors, we don’t need extra resonance to extend the timer
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="h2-end content-end"></div>
+        </div>
+        
+        <!-- VERITY -->
+        <div class="main-header-background" id="header-verity">
+            <div class="header-top-pattern"></div>
+            <img class="header-top-flag" src="./resources/images/flag_verity.svg"/>
+            <div class="header-bottom-pattern"></div>
+            <h1>VERITY</h1>
+        </div>
+        <div class="section-content" id="content-verity">
+            <div class="content-wrap em-margin-top">
+                <div class="em-margin-bottom">
+                    <div class="encounter-info-grid">
+                        <div class="encounter-info-container">
+                            <span>Enemies</span>
+                            <div class="encounter-info-grid-3">
+                                <div class="enemy-column">
+                                    <div class="enemy-wrap">
+                                        <img class="enemy-image" src="./resources/images/image_hive.jpg"/>
+                                    </div>
+                                </div>
+                                <div class="enemy-column">
+                                    <div class="enemy-wrap">
+                                        <img class="enemy-image" src="./resources/images/image_grim.jpg"/>
+                                    </div>
+                                </div>
+                                <div class="enemy-column">
+                                    <div class="enemy-wrap">
+                                        <img class="enemy-image" src="./resources/images/image_unstop.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="encounter-info-container">
+                            <span>Loot</span>
+                            <div class="encounter-info-grid-5">
+                                <div class="loot-column">
+                                    <a href="https://www.light.gg/db/items/1258168956/imminence/" target="_blank">
+                                        <div class="loot-wrap">
+                                            <img class="loot-image" src="./resources/images/image_smg.jpg"/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="loot-column">
+                                    <a href="https://www.light.gg/db/items/3569407878/summum-bonum/" target="_blank">
+                                        <div class="loot-wrap">
+                                            <img class="loot-image" src="./resources/images/image_sword.jpg"/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="loot-column">
+                                    <a href="https://www.light.gg/db/items/1770490683/non-denouement/" target="_blank">
+                                        <div class="loot-wrap">
+                                            <img class="loot-image" src="./resources/images/image_bow.jpg"/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="loot-column">
+                                    <div class="loot-wrap non-weapon">
+                                        <img class="loot-image" src="./resources/images/image_chest.jpg"/>
+                                    </div>
+                                </div>
+                                <div class="loot-column">
+                                    <div class="loot-wrap non-weapon">
+                                        <img class="loot-image" src="./resources/images/image_boots.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="encounter-info-container em-margin-v">
+                        <span>End Goal</span>
+                        <p>
+                            Survive three cycles of saving guardians mechanics
+                        </p>
+                    </div>
+                    <div class="encounter-info-container em-margin-v">
+                        <span>Imminent End</span>
+                        <p>
+                            3 minutes 30 seconds
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <h2>Enviroment</h2>
+            <div class="content-wrap">
+                <p class="paragraph">
+                    The encounter takes place in a mid-sized room, the room has two zones separated by a white structure with a hole in the middle.
+                    <br><br>
+                    Spawn zone: Six statues representing all the members of the fireteam
+                    <br><br>
+                    Wall zone: Three statues, the wall rotates triangular, circular, and square shadows.
+                    <br>
+                    <img src="./resources/images/image_enviroment_verity.png">
+                </p>
+            </div>
+            <div class="h2-end"></div>
+            <h2>Roles</h2>
+            <div class="content-wrap">
+                <p class="paragraph">
+                    The fireteam cannot choose roles in this encounter, they will be randomly assigned at the beginning of each mechanic cycle.
+                </p>
+                <div id="verity-roles-grid">
+                    <div class="verity-roles-column">
+                        <span class="role-title title-red">Inside</span>
+                        <div class="verity-roles-ghosts">
+                            <img src="./resources/images/icon_ghost.svg"/>
+                            <img src="./resources/images/icon_ghost.svg"/>
+                            <img src="./resources/images/icon_ghost.svg"/>
+                        </div>
+                    </div>
+                    <div class="verity-roles-column">
+                        <span class="role-title title-green">Outside</span>
+                        <ul class="roles">
+                            <li>Dissector</li>
+                            <li>Ad-Clearer</li>
+                            <li>Ad-Clearer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="h2-end"></div>
+            <h2>Preparation/Short Intro</h2>
+            <div class="content-wrap">
+                <div class="info-box">
+                    <h3>Fashion</h3>
+                    <div class="info-box-content-wrap">
+                        <p>
+                            Before starting the encounter each guardian will need to make sure they have a distinctive armor set and ghost. Shaders don't matter for the armor, but they do work as a distinguishing factor for the ghost.
+                            <br><br>
+                            After you have made yourself stand out with your armor and ghost it is time to take notes of the rest of your fireteam members, these notes will make the Saving the Guardians mechanic a lot easier so keep them somewhere easily accessible during the encounter.
+                            <br><br>
+                            The best way of formatting your notes would be:
+                            <br>
+                            <span class="verity-fashion-format">
+                                [GUARDIAN NAME]: [GUARDIAN ARMOR DESCRIPTION] - [GUARDIAN GHOST DESCRIPTION]
+                            </span>
+                            <br>
+                            Make sure the armor and ghost descriptions are descriptive enough, as you will need to quickly associate them with the guardian name when you see them in-game.
+                        </p>
+                    </div>
+                </div>
+                <p class="paragraph">
+                    There are three different mechanics in this encounter, two of them, Inside and Outside, will take place in the Wall Zone, the other one, Saving the Guardians, will take place in the Spawn Zone.    
+                    <br><br>
+                    As soon as the encounter starts three guardians will be isolated and teleported to a different version of the Wall Zone each, there is a glass wall that prevents them from going to the Spawn Zone. This is the <span class="red">Inside Team</span>. The other three guardians will stay in the full encounter room, this is the <span class="green">Outside Team</span>.
+                </p>
+            </div>
+            <div class="h2-end"></div>
+            <h2>The Inside</h2>
+            <div class="content-wrap">
+                <p class="paragraph">
+                    If you are one of the teleported Guardians, you will be by yourself in a copy of the Wall Zone of the encounter room. 
+                    <br><br>
+                    The room has three <span class="yellow">statues</span> that represent you and the other two guardians teleported to their own version of the Wall Zone, these three <span class="yellow">statues</span> will be holding a different <span class="yellow">2D shape</span> each (Triangle, Circle and Square). Guardian statues position and the shapes they hold are consistent across all three Inside rooms.
+                    <br><br>
+                    Your <span class="yellow">wall</span> will be rotating two <span class="yellow">shapes</span>: either two of the shape your statue is holding or one of the shape your guardian is holding and any of the other two.
+                    <br><br>
+                    This applies to every guardian teleported inside a Wall Zone room, making it a total of six shapes: two triangles, two circles and two squares, distributed between the three guardians' walls, two each.
+                </p>
+                <div class="info-box info-box-example">
+                    <h3>Example: Wall Shapes Combinations</h3>
+                    <div class="info-box-content-wrap">
+                        <p>
+                            If your statue is holding a <span class="yellowinf">triangle</span> your wall can show any of these combinations:
+                        </p>
+                        <ul class="info">
+                            <li>Triangle > Triangle</li>
+                            <li>Triangle > Circle</li>
+                            <li>Triangle > Square</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="paragraph">
+                    Inside the room you will also find a few minor ads and two major <span class="blue">hive knights</span>. When you kill a <span class="blue">hive knight</span>, it will drop a <span class="yellow">shape</span> as an <i>interact to pick-up</i> buff. This shape will always be one of the two shapes showing in you <span class="yellow">wall</span>. The other <span class="blue">knight</span> would drop the other <span class="yellow">shape</span>.
+                </p>
+                <div class="info-box info-box-example">
+                    <h3>Example: Knight Shape Drops</h3>
+                    <div class="info-box-content-wrap">
+                        <p>
+                            If your <span class="yellowinf">wall</span> is showing Triangle > Circle:
+                        </p>
+                        <ul class="info">
+                            <li>One knight will drop the Triangle Shape</li>
+                            <li>The other knight will drop the Circle Shape</li>
+                        </ul>
+                        <hr>
+                        <p>
+                            Shapes are limited, if a knight drops the Triangle, the other knight will 100% drop the Circle.
+                        </p>
+                    </div>
+                </div>
+                <p class="paragraph">
+                    The main mechanic of this room is trading your shapes with the other <span class="red">Inside</span> guardians. 
+                    <br><br>
+                    When a <span class="blue">knight</span> drops a <span class="yellow">shape</span> and you pick it up you can interact with the <span class="yellow">statues</span> of your teleported partners, doing so will remove your buff, remove the shape you picked up and used on the statue from your <span class="yellow">wall</span>, and it will give it to the guardian's <span class="yellow">wall</span> whose statue you interacted with, making it available for them when they kill a <span class="blue">knight</span>.
+                </p>
+                <div class="info-box info-box-buff">
+                    <h3>3D Shape buffs</h3>
+                    <div class="info-box-content-wrap">
+                        <p>
+                            If you kill both knights and pick up the shape buffs they drop without dunking any first you will create a 3D shape buff. 
+                            <br><br>
+                            Dunking a 3D shape buff in one of your teleported partners statues will get rid of the buff without any consequences for you or the guardian whose statue you interacted with. 
+                            <br><br>
+                            This is useful if you have picked up the wrong shape buff and want to get rid of it without giving it to another guardian.
+                        </p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <h3>Ogres</h3>
+                    <div class="info-box-content-wrap">
+                        <img class="info-box-top-img" src="./resources/images/image_hive_ogre.png"/>
+                        <hr>
+                        <p>
+                            A hive ogre will spawn in your room if both knights are dead and one of the shapes in your wall is unavailable to be picked up. 
+                            <br><br>
+                            A shape is unavailable to be picked up if:
+                        </p>
+                        <ul class="info">
+                            <li>You killed the knight and didn't pick it up, making it despawn after some time</li>
+                            <li>You picked up both shapes, forming a 3D and dunked them on a statue, they are still on your wall but the knights are dead</li>
+                        </ul>
+                        <hr>
+                        <p>
+                            Killing the ogre will spawn as many knights as shapes you have in your wall, with a maximum of two knights.
+                        </p>
+                        <ul class="info">
+                            <li>If you have only one shape: only one knight will spawn, it will drop that shape if killed</li>
+                            <li>If you have two shapes: two knights will spawn, dropping one of the shapes each.</li>
+                            <li>If you have more than two shapes: First shapes in, First shapes out. Two knights will spawn, they will drop the shapes that were in your wall first. If you give those two shapes away another ogre will spawn, killing it will spawn new knights, those new knights will drop the next shapes.</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="paragraph">
+                    Your main goal in this part of the encounter is to get out of the room though the glass wall that separates the Wall Zone from the Spawn Zone. 
+                    <br><br>
+                    For you to be able to get out, three conditions must be met: 
+                </p>
+                <p class="paragraph verity-condition condition-inside">
+                    1. You are holding a 3D Shape made up of two symbols different than the symbol your statue is holding.
+                </p>
+                <div class="info-box info-box-example">
+                    <h3>Example: Condition 1</h3>
+                    <div class="info-box-content-wrap">
+                        <p>
+                            If your statue is holding <span class="yellowinf">Triangle</span> you can get out using:
+                        </p>
+                        <ul class="info">
+                            <li>Cylinder: Circle + Square</li>
+                            <li>Sphere: Circle + Circle</li>
+                            <li>Cube: Square + Square</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="paragraph verity-condition condition-inside">
+                    2. You have traded the first two shapes you had on your wall when you were teleported to the room. It does not matter if one of those two shapes is given back to you, as long as you gave it away to another guardian first.
+                </p>
+                <p class="paragraph verity-condition condition-outside">
+                    3. Your statue on the Outside is matching the 3D shape you are holding from Contition 1: this is the Outside Guardian's job, you don't have to worry about it.
+                </p>
+                <p class="paragraph">
+                    While Condition 3 depends on the Outside players, you do need to communicate to them the 2D shapes the statues you see are holding from Left to Right as soon as the encounter starts, they need this information to do their job.
+                    <br><br>
+                    The easiest way to fulfill the two conditions that deppend on you (1 and 2) is using what's known as the <i>Two of own, then distribute</i> strat. The strat is divided in two steps:
+                </p>
+                <div class="info-box">
+                    <h3>Step 1: Two of Own</h3>
+                    <div class="info-box-content-wrap">
+                        <p>
+                            The goal of this first step is to make your wall rotate only the shape that your guardian's statue is holding. 
+                            <br><br>
+                            To accomplish this, every guardian that has a shape on their wall different than the one their statue is holding must kill the knight that drops it, grab it, and give it to the statue of the guardian that is actually holding it. 
+                            <br><br>
+                            If done correctly, everyone should have two of their own shape rotating on their wall, if you do, communicate it to your partners; everyone should finish this step before moving on to step 2.
+                        </p>
+                    </div>
+                </div>
+                <div class="info-box info-box-example">
+                    <h3>Example 1: Two of Own</h3>
+                    <div class="info-box-content-wrap">
+                        <p>
+                            Your statue is holding <span class="yellowinf">Triangle</span>, your wall is showing Triangle > Circle. 
+                            <br><br>
+                            You kill a knight and it drops the <span class="yellowinf">Triangle</span>. You want the <span class="yellowinf">Circle</span> to drop so you ignore it and kill the other knight, which will drop the <span class="yellowinf">Circle</span>.
+                            <br><br>
+                            You pick up the <span class="yellowinf">Circle</span>, find the statue that is holding it, and interact with it, giving it to the <span class="yellowinf">Circle Guardian</span>. 
+                            <br><br>
+                            One of the other guardians would have a <span class="yellowinf">Triangle</span> on their wall that they don't need; they would do the same and deposit their <span class="yellowinf">Triangle</span> in your statue, giving it to you. 
+                            <br><br>
+                            Now you have Triangle > Triangle on your wall. Step 1 is done; make sure to let the other guardians know.
+                        </p>
+                    </div>
+                </div>
+                <div class="info-box info-box-example">
+                    <h3>Example 2: Two of Own</h3>
+                    <div class="info-box-content-wrap">
+                        <p>
+                            Your statue is holding <span class="yellowinf">Triangle</span>, your wall is showing Triangle > Triangle. 
+                            <br><br>
+                            You got lucky: Step 1 is already done for you when you got teleported in, you don't need to do anything other than letting your partners know you are ready for Step 2.
+                        </p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <h3>Step 2: Distribute</h3>
+                    <div class="info-box-content-wrap">
+                        <p>
+                            Once every guardian that got teleported to an inside room has two of the same shape on your wall (the one their statue is holding) you are ready for this step.
+                            <br><br>
+                            In this step, your goal is to give the other Inside Guardians your two shapes (one each).
+                        </p>
+                        <ul class="numbered">
+                            <li>Kill one of the knights so it drops one of the shapes and give it to the leftmost statue that is not yours.</li>
+                            <li>Kill the other knight to drop the other shape and give it to the rightmost statue that is not yours.</li>
+                        </ul>
+                        <br>
+                        <p>
+                            Distributing from left to right makes it easier for you to remember which statue you have already distributed one of your shapes to and which one you haven't.
+                            <br><br>
+                            All you need to do now is wait for the other two guardians to do the same.
+                            <br><br>
+                            If everyone on the Inside does this correctly, you all will fulfill both Conditions 1 and 2:
+                        </p>
+                        <ul class="numbered">
+                            <li>You got rid of the two shapes that match your statue's shape, making sure your wall rotates the two shapes that don't.</li>
+                            <li>By this point, you have also already traded away both the shapes you had on your wall initially.</li>
+                        </ul> 
+                        <br>
+                        <p>
+                            Once your wall shows two shapes that are different from the one your statue is holding, kill the knights and pick up both shapes to create the 3D shape you need. If the Outside players have done their job correctly, you should be able to get out of the room through the glass.
+                        </p>
+                    </div>
+                </div>
+                <div class="info-box info-box-example">
+                    <h3>Example: Distribute</h3>
+                    <div class="info-box-content-wrap">
+                        <p>
+                            Your statue is the one on the <span class="yellowinf">left</span> and it is holding <span class="yellowinf">Triangle</span>, your wall is showing Triangle > Triangle after doing Step 1 correctly. 
+                            <br><br>
+                            You kill one of the <span class="blueinf">knights</span>, it drops one of the <span class="yellowinf">Triangles</span>, you give it to the statue on the <span class="yellowinf">middle</span>. 
+                            <br><br>
+                            You kill the other <span class="blueinf">knight</span> and it drops the other <span class="yellowinf">Triangle</span>, you give it to the statue on the <span class="yellowinf">right</span>. 
+                            <br><br>
+                            Now both of your teleported partners have a <span class="yellowinf">Triangle</span>. 
+                            <br><br>
+                            They will be doing the same with their shapes:
+                            <br>
+                            The guardian whose statue is holding a <span class="yellowinf">Circle</span> will give one of their two <span class="yellowinf">Circles</span> to you. 
+                            <br>
+                            The guardian whose statue is holding a <span class="yellowinf">Square</span> will give one of their two <span class="yellowinf">Squares</span> to you. 
+                            <br><br>
+                            Your <span class="yellowinf">wall</span> will now have Circle > Square. Respawn the <span class="blueinf">knights</span> by killing the ogre and kill them to drop both of those shapes. Pick them up to make your 3D shape (Cylinder) and get out of the room; your job is done.
+                        </p>
+                    </div>
+                </div>
+                <p class="paragraph verity-warning">
+                    At some point during this part of the encounter, you will be interrupted by the Saving the Guardians mechanic. Once that part is over, you'll be back to your room to finish your job.
+                </p>
+                <div class="verity-simulator-container">
+                    <span class="simulator-title">Raid</span>
+                    <div class="simulator-launch-container">
+                        <span class="simulator-name">Verity: Inside Simulator</span>
+                        <div class="button-launch-wrap simulator-launch">
+                            <a href="https://carlosf93.github.io/verity-inside/" target="_blank">
+                                <div class="button-launch-inner">
+                                    Launch
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <span class="simulator-location">The Pale Heart // Salvation's Edge</span>
+                </div>
+            </div>
+            <div class="h2-end"></div>
+            <h2>The Outside</h2>
+            <div class="content-wrap">
+                <p class="paragraph">
+                    You and two other guardians stay in the encounter room, you will need to go to the Wall Zone, where the three <span class="yellow">statues</span> are, these <span class="yellow">statues</span> match the guardians who got teleported inside and are holding <span class="yellow">3D shapes</span>.
+                </p>
+                <div class="info-box">
+                    <h3>3D Shapes</h3>
+                    <div class="info-box-content-wrap">
+                        <img class="info-box-top-img vertiy-3d-shapes-img" src="./resources/images/image_3d_shapes.png"/>
+                        <hr>
+                        <p>
+                            A 3D shape is a combination of two 2D shapes:
+                        </p>
+                        <ul class="info">
+                            <li>Pyramid: Triangle + Triangle</li>
+                            <li>Sphere: Circle + Circle</li>
+                            <li>Cube: Square + Square</li>
+                            <li>Prism: Triangle + Square</li>
+                            <li>Cone: Triangle + Circle</li>
+                            <li>Cylinder: Circle + Square</li>
+                        </ul>
+                        <hr>
+                        <p>
+                            As one of the outside guardians, one of your skills should be to identify which 2D shapes are part of a 3D shape.
+                        </p>
+                    </div>
+                </div>
+                <p class="paragraph">
+                    Your goal is to match the outside <span class="yellow">statues</span>' 3D Shapes with the 3D Shape the Inside guardians will be using to get out.
+                    <br><br>
+                    Since the guardians on the inside are using the <i>Two of own, then distribute</i> strat we know that the 3D shapes they will use to get out will be formed by the opposite shapes of what their statue is holding. We need the <span class="red">Inside Team</span> to give us a simple Left to Right callout of their statues' shapes.
+                    <br><br>
+                    With that information we can do our job using the main mechanic of the <span class="green">Outside</span> room: <span class="yellow">Dissection</span>.
+                </p>
+                <div class="info-box">
+                    <h3>Outside Knights</h3>
+                    <div class="info-box-content-wrap">
+                        <p>
+                            Hive knights will spawn on the Outside just like they do on the Inside, the main difference is that the Outside spawns three knights instead of two, and the shapes buff they drop are fixed to the knight location.
+                        </p>
+                        <ul class="info">
+                            <li>The Left Knight will always drop Circle</li>
+                            <li>The Mid Knight will always drop Triangle</li>
+                            <li>The Right Knight will always drop Square</li>
+                        </ul>
+                        <hr>
+                        <p>
+                            When all knights are dead and no shapes are available, two Unstoppable ogres will spawn: one on the left and one on the right. Killing them will make the knights respawn.
+                        </p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <h3>Dissection</h3>
+                    <div class="info-box-content-wrap">
+                        <p>
+                            Dissection is the Outside interaction with the statues and their shapes.
+                        </p>
+                        <hr>
+                        <ul class="features">
+                            <li>Dissecting a shape from a statue means you want to remove that 2D shape from the 3D shape the statue holds.</li>
+                            <li>Dissection is a two statue process: the 2D shape that you dissect from a first statue will swap with the 2D shape you dissect from the second statue. When you dissect a shape from the first statue its pedestal will glow; that means the statue is waiting for you to dissect a 2D shape from another statue so they can swap.</li>
+                            <li>Dissection is a one person job; more than one person dissecting makes it harder.</li>
+                            <li>The guardian on the outside who wants to be in charge of the dissection should call it out; the other two will ad-clear for them.</li>
+                        </ul>
+                        <hr>
+                        <p>
+                            You will need to swap 2D shapes between the statues using dissection to ensure Condition 3 is met for the Inside guardians.
+                        </p>
+                    </div>
+                </div>
+                <div class="info-box info-box-example">
+                    <h3>Example: Dissection</h3>
+                    <div class="info-box-content-wrap">
+                        <ul class="info">
+                            <li>Statue 1 is holding a Prism (Triangle + Square)</li>
+                            <li>Statue 2 is holding a Sphere (Circle + Circle)</li>
+                        </ul>
+                        <hr>
+                        <ul class="numbered">
+                            <li>You pick up a Triangle and interact with Statue 1; its pedestal will glow.</li>
+                            <li>You pick up a Circle and interact with Statue 2. The statues will swap their dissected 2D shapes, and Statue 1's pedestal glow will dim.</li>
+                        </ul>
+                        <hr>
+                        <ul class="info">
+                            <li>Statue 1 will now be holding a Cylinder (Circle + Square)</li>
+                            <li>Statue 2 will now be holding a Cone (Triangle + Circle)</li>
+                        </ul>
+                        <hr>
+                        <p>
+                            The Triangle you dissected from Statue 1 swapped with the Circle you dissected from Statue 2.
+                        </p>
+                    </div>
+                </div>
+                <div class="info-box info-box-example">
+                    <h3>Example: Full Outside Cycle</h3>
+                    <div class="info-box-content-wrap">
+                        <p>
+                            The Inside Guardians give you their statue callout: <u>TCS</u>
+                        </p>
+                        <hr>
+                        <p>
+                            On the outside the statues:
+                        </p>
+                        <ul class="info">
+                            <li>Left is holding a Cone (Triangle + Circle)</li>
+                            <li>Mid is holding a Cylinder (Circle + Square)</li>
+                            <li>Right is holding a Prism (Square + Triangle)</li>
+                        </ul>
+                        <hr>
+                        <p>
+                            Let's focus on the <span class="yellowinf">Left Statue</span> first; it is holding a <span class="yellowinf">Cone (Triangle + Circle)</span> and we want it to be holding a <span class="yellowinf">Cylinder (Square + Circle)</span> because that is the opposite of <span class="yellowinf">Triangle</span> and is the 3D shape the Left statue guardian from the <span class="redinf">inside</span> is going to use to get out.
+                            <br><br>
+                            Since a <span class="yellowinf">Cone</span> is Triangle + Circle and we want a <span class="yellowinf">Cylinder</span>, which is Square + Circle the first thing we need to do is dissect the <span class="yellowinf">Triangle</span> that we don't want from the shape.
+                            <br><br>
+                            We kill the <span class="blueinf">knight</span> in the middle (because it is the one that drops the <span class="yellowinf">Triangle buff</span>), pick up the buff, and interact with the <span class="yellowinf">Left</span> statue; its pedestal will start to glow, meaning is waiting for you to dissect another shape to swap the <span class="yellowinf">Triangle</span> with.
+                            <br><br>
+                            We want the <span class="yellowinf">Triangle</span> to be replaced by a <span class="yellowinf">Square</span> to create a <span class="yellowinf">Cylinder</span>. We see that the statue on the <span class="yellowinf">Right</span> is holding a <span class="yellowinf">Prism</span> (Square + Triangle), and since the callout for that statue is <span class="yellowinf">S</span>, that means that it does not need that <span class="yellowinf">Square</span>. So, we kill the <span class="blueinf">knight</span> on the right (the one that drops the <span class="yellowinf">Square</span> buff) and interact with the statue.
+                            <br><br>
+                            The dissection process is done; the <span class="yellowinf">Triangle</span> we dissected from the statue on the <span class="yellowinf">Left</span> will swap with the <span class="yellowinf">Square</span> we dissected from the statue on the <span class="yellowinf">Right</span>.
+                        </p>
+                        <hr>
+                        <p>
+                            Now the statues look like this:
+                        </p>
+                        <ul class="info">
+                            <li>Left is holding a Cylinder (Square + Circle). Done</li>
+                            <li>Mid is holding a Cylinder (Circle + Square)</li>
+                            <li>Right is holding a Pyramid (Triangle + Triangle)</li>
+                        </ul>
+                        <hr>
+                        <p>
+                            The Left callout was a <span class="yellowinf">T</span>, and the statue is holding a <span class="yellowinf">Cylinder</span>; we don't need to interact with that statue again, so let's focus on the other two.
+                            <br><br>
+                            The <span class="yellowinf">Mid</span> statue has a <span class="yellowinf">Cylinder</span>, and we want it to be a <span class="yellowinf">Prism</span>. We need to dissect a <span class="yellowinf">Circle</span> from it, so let's kill the last <span class="blueinf">knight</span> that is still alive (on the Left); it will drop the <span class="yellowinf">Circle</span> buff for us.
+                            <br><br>
+                            We will interact with the <span class="yellowinf">Mid</span> statue to dissect the <span class="yellowinf">Circle</span> from it. Its pedestal will start to glow.
+                            <br><br>
+                            Since all the <span class="blueinf">knights</span> are dead, two <span class="blueinf">unstoppable ogres</span> will spawn. The Ad-Clearers should kill them as soon as possible; that will make new <span class="blueinf">knights</span> respawn.
+                            <br><br>
+                            The shape that needs to replace the <span class="yellowinf">Circle</span> we just dissected is a <span class="yellowinf">Triangle</span>. The <span class="yellowinf">Right statue</span> has a <span class="yellowinf">Pyramid</span> (two triangles), and only needs one so let's kill the mid <span class="blueinf">knight</span>, grab the <span class="yellowinf">triangle</span> that it drops, and dissect it from the <span class="yellowinf">Right statue</span>.
+                        </p>
+                        <hr>
+                        <p>
+                            The shapes will swap, and the final state of each statue is:
+                        </p>
+                        <ul class="info">
+                            <li>Left is holding a Cylinder (Square + Circle). Done</li>
+                            <li>Mid is holding a Prism (Triangle + Square). Done</li>
+                            <li>Right is holding a Cone (Circle + Triangle). Done</li>
+                        </ul>
+                        <hr>
+                        <p>
+                            Our job is done; all we need to do now is wait for the Inside Team to finish theirs, and they should be able to get out.
+                        </p>
+                    </div>
+                </div>
+                <p class="paragraph verity-warning">
+                    At some point during this part of the encounter, you will be interrupted by the Saving the Guardians mechanic. That should be the main focus until it is done.
+                </p>
+                <div class="verity-simulator-container">
+                    <span class="simulator-title">Raid</span>
+                    <div class="simulator-launch-container">
+                        <span class="simulator-name">Verity: Dissection Simulator</span>
+                        <a href="https://carlosf93.github.io/verity-dissection/" target="_blank">
+                            <div class="button-launch-inner">
+                                Launch
+                            </div>
+                        </a>
+                    </div>
+                    <span class="simulator-location">The Pale Heart // Salvation's Edge</span>
+                </div>
+            </div>
+            <div class="h2-end"></div>
+            <h2>Saving the Guardians</h2>
+            <div class="content-wrap">
+                <p class="paragraph">
+                    This mechanic takes place in the Spawn Zone, where the six statues are located.
+                    <br><br>
+                    At two different moments during the encounter, The Witness will kill a fraction of the fireteam, dropping their ghost in place.
+                </p>
+                <div class="info-box">
+                    <h3>Ghosts and Statues</h3>
+                    <div class="info-box-content-wrap">
+                        <ul class="info">
+                            <li>The non-dead guardians will only see all their statues and the empty pedestals where the dead guardians' statues should be. Their job is to bring the ghost of a dead guardian to the empty pedestal where the statue of the ghost's owner is.</li>
+                            <li>Each dead guardian will be able to see one statue in one of the empty (glowing for them) pedestals; this statue will never be their own. Their job is to comunicate to the alive guardians whose statue they see and on which pedestal it is.</li>    
+                        </ul>
+                        <hr>
+                        <ul class="warnings">
+                            <li>Dunking a ghost in the wrong pedestal will kill the guardian holding the ghost</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="paragraph">
+                    This is when the notes we took before the encounter started come in handy.
+                    <br><br>
+                    The alive guardians will use their ghost description notes to identify whose ghost they picked up.
+                    <br><br>
+                    The dead guardians will use their armor description notes to identify the guardian whose statue they see in the glowing pedestal.
+                </p>
+                <div class="info-box">
+                    <h3>Interruption: During the mechanics</h3>
+                    <div class="info-box-content-wrap">
+                        <p>
+                            While both <span class="redinf">Inside</span> and <span class="greeninf">Outside</span> guardians are doing their job, The Witness will interrupt the mechanics and kill all three of the <span class="redinf">Inside</span> guardians. 
+                            <br><br>
+                            Their <span class="yellowinf">ghosts</span> will spawn in the <span class="greeninf">Outside room</span>, available for the Outside guardians to pick up, one each.
+                            <br><br>
+                            The <span class="greeninf">Outside</span> guardians should quickly go through their notes before picking up a <span class="yellowinf">ghost</span> to know whose <span class="yellowinf">ghost</span> they are picking up, then go to the Spawn Zone and stand in front of the <span class="yellowinf">six statues</span>, waiting for one of the dead guardians to give them the combination of Guardian Name and Pedestal Position callout for the guardian whose <span class="yellowinf">ghost</span> they picked up. Dunk your <span class="yellowinf">ghost</span> in the pedestal when they do and go back to your job in the Wall Zone.
+                            <br><br>
+                            The <span class="redinf">Inside</span> guardian's cameras will stay in the Inside room. To be able to do the mechanics, they need to switch their death cam to spectate one of the alive guardians. When they grab a <span class="yellowinf">ghost</span> and go to the Spawn Zone, they will be able to see three non-glowing statues (alive guardians) and three <span class="yellowinf">glowing pedestals</span>, one of them with a <span class="yellowinf">statue</span>. Take a look at your notes, identify the guardian, and give the alive guardians a Guardian Name and Pedestal Number callout. When the guardian who grabbed your <span class="yellowinf">ghost</span> dunks it in the correct <span class="yellowinf">statue</span>, you will be back in your Inside Room.
+                        </p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <h3>Interruption: After the mechanics</h3>
+                    <div class="info-box-content-wrap">
+                        <p>
+                            After all the <span class="redinf">Inside</span> guardians leave their Inside rooms with their <span class="yellowinf">3D shapes</span>, the Imminent End timer will disappear, and a few minor ads alongside two <span class="blueinf">Unstoppable ogres</span> will spawn. Once all of them are dead, a new <span class="yellowinf">1-minute Imminent End timer</span> will appear, and <span class="yellowinf">5 guardians</span> will be calcified, leaving only <span class="yellowinf">1 guardian</span> alive to save them.
+                            <br><br>
+                            The mechanics are exactly the same for the dead guardians. You will see a <span class="yellowinf">statue</span> that represents one of the other calcified guardians in one of the <span class="yellowinf">glowing pedestals</span>; call it out by Guardian Name and Pedestal Position.
+                            <br><br>
+                            The alive guardian' job is easier this time; you don't need to go through your notes to make sure you are picking up the right <span class="yellowinf">ghost</span>. The dead guardians' <span class="yellowinf">ghosts</span> will be right next to their bodies, which still have the name tag above their heads. When you get a callout, look for the guardian's calcified body, pick up the <span class="yellowinf">ghost</span> that is near it, and dunk it in the called-out <span class="yellowinf">pedestal</span>. The dead guardian will be revived and can help you get the other <span class="yellowinf">ghosts</span> to their <span class="yellowinf">pedestals</span>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="h2-end content-end"></div>
+        </div>
+
+        <!-- TRAVERSAL IV -->
+        <div class="main-header-background" id="header-traversaliv">
+            <div class="header-top-pattern"></div>
+            <img class="header-top-flag" src="./resources/images/flag_traversaliv.svg"/>
+            <div class="header-bottom-pattern"></div>
+            <h1>TRAVERSAL IV</h1>
+        </div>
+        <div class="section-content" id="content-traversaliv">
+            <h2>Lore Collectible #4</h2>
+            <div class="content-wrap">
+                <video class="tutorial-video" controls>
+                    <source src="./resources/videos/lc4.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <a class="attribution-link" href="https://www.youtube.com/@Spazmattic" target="_blank">
+                    <div class="attribution-wrap">
+                        <div class="attribution">
+                            Original Video by Spazmattic
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="h2-end"></div>
+            <h2>Lore Collectible #5</h2>
+            <div class="content-wrap">
+                <video class="tutorial-video" controls>
+                    <source src="./resources/videos/lc5.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <a class="attribution-link" href="https://www.youtube.com/@Spazmattic" target="_blank">
+                    <div class="attribution-wrap">
+                        <div class="attribution">
+                            Original Video by Spazmattic
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="h2-end"></div>
+            <h2>Secret Chest #2</h2>
+            <div class="content-wrap">
+                <video class="tutorial-video" controls>
+                    <source src="./resources/videos/sc2.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <a class="attribution-link" href="https://www.youtube.com/@Skarrow9" target="_blank">
+                    <div class="attribution-wrap">
+                        <div class="attribution">
+                            Original Video by Skarrow9
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="h2-end content-end"></div>
+        </div>
+        
+        <!-- ZENITH -->
+        <div class="main-header-background" id="header-zenith">
+            <div class="header-top-pattern"></div>
+            <img class="header-top-flag" src="./resources/images/flag_zenith.svg"/>
+            <div class="header-bottom-pattern"></div>
+            <h1>ZENITH</h1>
+        </div>
+        <div class="section-content" id="content-zenith">
+            <div class="content-wrap em-margin-top">
+                <div class="em-margin-bottom">
+                    <div class="encounter-info-grid">
+                        <div class="encounter-info-container">
+                            <span>Enemies</span>
+                            <div class="encounter-info-grid-3">
+                                <div class="enemy-column">
+                                    <div class="enemy-wrap">
+                                        <img class="enemy-image" src="./resources/images/image_scorn.jpg"/>
+                                    </div>
+                                </div>
+                                <div class="enemy-column">
+                                    <div class="enemy-wrap">
+                                        <img class="enemy-image" src="./resources/images/image_weaver.jpg"/>
+                                    </div>
+                                </div>
+                                <div class="enemy-column">
+                                    <div class="enemy-wrap">
+                                        <img class="enemy-image" src="./resources/images/image_subjugator.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="encounter-info-container">
+                            <span>Loot</span>
+                            <div class="encounter-info-grid-6">
+                                <div class="loot-column">
+                                    <a href="https://www.light.gg/db/items/3284383335/euphony/" target="_blank">
+                                        <div class="loot-wrap-euphony">
+                                            <img class="loot-image" src="./resources/images/image_euphony.jpg"/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="loot-column">
+                                    <a href="https://www.light.gg/db/items/445197843/critical-anomaly/" target="_blank">
+                                        <div class="loot-wrap">
+                                            <img class="loot-image" src="./resources/images/image_sniper.jpg"/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="loot-column">
+                                    <a href="https://www.light.gg/db/items/3569407878/summum-bonum/" target="_blank">
+                                        <div class="loot-wrap">
+                                            <img class="loot-image" src="./resources/images/image_sword.jpg"/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="loot-column">
+                                    <a href="https://www.light.gg/db/items/859869931/nullify/" target="_blank">
+                                        <div class="loot-wrap">
+                                            <img class="loot-image" src="./resources/images/image_pulse.jpg"/>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="loot-column">
+                                    <div class="loot-wrap non-weapon">
+                                        <img class="loot-image" src="./resources/images/image_helm.jpg"/>
+                                    </div>
+                                </div>
+                                <div class="loot-column">
+                                    <div class="loot-wrap non-weapon">
+                                        <img class="loot-image" src="./resources/images/image_boots.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="encounter-info-container em-margin-v">
+                        <span>End Goal</span>
+                        <p>
+                            Defeat the Witness
+                        </p>
+                    </div>
+                    <div class="encounter-info-container em-margin-v">
+                        <span>The Final Shape</span>
+                        <p>
+                            3 minutes 30 seconds
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <h2>Enviroment</h2>
+            <div class="content-wrap">
+                <p class="paragraph">
+                    The encounter takes place in a big V-shaped arena with one small sized island floating in the middle.
+                    <br>
+                    <img src="./resources/images/image_enviroment_zenith.png">
+                </p>
+            </div>
+            <div class="h2-end"></div>
+            <h2>Roles</h2>
+            <div class="content-wrap">
+                <div id="zenith-roles-grid">
+                    <div class="zenith-roles-column">
+                        <span class="role-title title-red">Ad-Clearers</span>
+                        <div class="zenith-roles-ghosts">
+                            <img src="./resources/images/icon_ghost.svg"/>
+                            <img src="./resources/images/icon_ghost.svg"/>
+                            <img src="./resources/images/icon_ghost.svg"/>
+                        </div>
+                    </div>
+                    <div class="zenith-roles-column">
+                        <span class="role-title title-green">Runners</span>
+                        <ul class="roles">
+                            <li>Triangle</li>
+                            <li>Circle</li>
+                            <li>Square</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="h2-end"></div>
+            <h2>Encounter Explanation</h2>
+            <div class="content-wrap">
+                <div class="info-box">
+                    <h3>Resonance</h3>
+                    <div class="info-box-content-wrap">
+                        <p>
+                            The resonance buff is back in this encounter, but the way of obtaining it is different.
+                            <br>
+                            The Witness arms that we saw and ignored during the first three encounters will be our source of it.
+                            <br><br>
+                            To get a specific type of resonance we will need to get inside the attack of the arm we want the resonance from:
+                        </p>
+                        <ul class="info">
+                            <li>Triangle: Ceiling arm. Triangular attack that targets a guardian. Get inside the triangle before it explodes for a couple of seconds to get the resonance</li>
+                            <li>Circle: Ground arm. Circular attack with a fixed spawn point. Get inside the circle for a couple of seconds before the bees kill you to get the resonance</li>
+                            <li>Square: Wall arm. Horizontal beam parallel to the ground that targets a guardian. Get inside the beam area for a couple of seconds before the attack starts to get the resonance</li>
+                        </ul>
+                        <hr>
+                        <p>
+                            There is a sound cue that starts when you enter the attack and ends when you obtain the resonance.
+                        </p>
+                    </div>
+                </div>
+                <p class="paragraph">
+                    If we look at the Witness we can see six glyphs (buttons) on their chest, our goal is to destroy all six buttons to start a damage phase.
+                    <br>
+                    To destroy a button we will need the <span class="yellow">Glyphbreaker</span> buff.
+                </p>
+                <div class="info-box info-box-buff">
+                    <h3>Glyphbreaker</h3>
+                    <div class="info-box-content-wrap">
+                        <p>
+                            We will obtain the <span class="yellowinf">Glyphbreaker buff</span> as a reward for destroying one of the <span class="yellowinf">Witness arms</span>. To destroy an arm we need to shoot at its <span class="yellowinf">wrist</span> while being inside its attack and having a specific resonance-type buff.
+                            <br><br>
+                            To figure out which type of <span class="yellowinf">resonance</span> an <span class="yellowinf">arm</span> needs to break we will need to do a <span class="yellowinf">first wrist break</span> while being briefly inside its attack (we don't want to be inside the attack for too long; if we are, we might accidently get its <span class="yellowinf">resonance type</span>), that will destroy a surface layer of the <span class="yellowinf">wrist</span> revealing one of the next three colors:
+                        </p>
+                        <ul class="info">
+                            <li>Red with square symbols: the arm needs <span class="yellowinf">Square resonance</span> to be destroyed</li>
+                            <li>Green with triangle symbols: the arm needs <span class="yellowinf">Triangle resonance</span> to be destroyed</li>
+                            <li>Yellow with elongated circle symbols: the arm needs <span class="yellowinf">Circle resonance</span> to be destroyed</li>
+                        </ul>
+                        <hr>
+                        <p>
+                            Once we know which <span class="yellowinf">resonance</span> an <span class="yellowinf">arm</span> needs to be broken we will go look for an <span class="yellowinf">arm</span> that gives us that type of <span class="yellowinf">resonance</span>, get inside its attack to get it and then come back to the <span class="yellowinf">initial arm</span> to break it while being inside its attack (again, a quick in and out should be enough to break the <span class="yellowinf">arm</span>; if we stay inside the attack for longer than needed, we will get its <span class="yellowinf">resonance</span> and overwrite the one we went to get to break it).
+                            <br><br>
+                            When the <span class="yellowinf">arm</span> breaks we will get the <span class="yellowinf">Glyphbreaker</span> buff.
+                            <br><br>
+                            You can only break one <span class="yellowinf">Witness glyph</span> with your <span class="yellowinf">Glyphbreaker buff</span>, to break more <span class="yellowinf">glyphs</span> you will need to reacquire it.                            
+                        </p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <h3>Cleanse</h3>
+                    <div class="info-box-content-wrap">
+                        <p>
+                            With the <span class="yellowinf">resonance buff</span> coming back, its x3 stack restriction still applies, to cleanse your <span class="yellowinf">resonance</span> stacks and avoid dying if you get a fourth you need to cleanse yourself from it.
+                            <br><br>
+                            To cleanse you need to be standing in the <span class="yellowinf">pool of light</span> that is in the floating island in the center of the arena, when someone breaks a <span class="yellowinf">Witness glyph</span>, the pool will light up, and everyone inside it will be cleansed of resonance.    
+                        </p>
+                    </div>
+                </div>
+                <p class="paragraph">
+                    When the encounter starts, all three different <span class="yellow">Witness arms</span> will spawn and start doing their attacks, minor ads will also spawn.
+                    <br><br>
+                    The <span class="green">runners</span> should start doing their job as soon as the encounter starts and the <span class="red">ad-clearers</span> should be covering them while they do it from the endless <span class="blue">Screebs</span>, <span class="blue">Scorn Chieftains</span> and <span class="blue">Weavers</span>.
+                    <br><br>
+                    When a <span class="green">runner</span> breaks a <span class="yellow">glyph</span>, a <span class="blue">Strand Subjugator</span> will spawn on the left side, and a <span class="blue">Stasis Subjugator</span> will spawn on the right side. Breaking more <span class="yellow">glyphs</span> will not spawn any additional <span class="blue">Subjugators</span> if both are still alive.
+                    <br><br>
+                    In every <span class="yellow">glyph</span> breaking mechanic phase there will be a <span class="yellow">Witness test</span>.
+                </p>
+                <div class="info-box">
+                    <h3>Witness Test</h3>
+                    <div class="info-box-content-wrap">
+                        <p>
+                            When one of the runners breaks an <span class="yellowinf">arm</span>, there is a chance the arm <span class="yellowinf">glows orange</span> and <span class="yellowinf">screams</span> when broken. This means a <span class="yellowinf">Witness Test</span> has been triggered.
+                            <br><br>
+                            The Witness will spawn a total of <span class="yellowinf">14 Darkness Cruxes</span> in front of them. To pass the <span class="yellowinf">test</span>, the fireteam needs to shoot enough <span class="yellowinf">Cruxes</span> so the ones that are <span class="yellowinf">still on</span> create a shape that matches the <span class="yellowinf">broken arm resonance type</span> (the type that the arm would give you if you stood in its attack, not the one that was used to break it).
+                        </p>
+                        <hr>
+                        <img class="info-box-top-img vertiy-3d-shapes-img" src="./resources/images/image_witness_test.png"/>
+                        <hr>
+                        <p>
+                            After the test is done, The Witness will do an insta-kill ground attack; jump to avoid it.    
+                        </p>
+                    </div>
+                </div>
+                <p class="paragraph">
+                    When five <span class="yellow">glyphs</span> have been destroyed and one <span class="green">runner</span> has the <span class="yellow">Glyphbreaker buff</span> to destroy the last one, they will call for <i>Damage</i>. Everyone will gather on the floating island, the last <span class="yellow">glyph</span> will be broken, the floating island will rise to The Witness chest's height, and the damage phase starts.
+                </p>
+                <div class="info-box">
+                    <h3>Damage Phase</h3>
+                    <div class="info-box-content-wrap">
+                        <p>
+                            The Witness will do three attack cycles before ending the damage phase.
+                            <br>
+                            Witness attack cycle:
+                        </p>
+                        <ul class="info">
+                            <li>First Beam Attack: a horizontal attack similar to the Wall hand.</li>
+                            <li>Second Beam Attack: the same as the first beam; its area of effect will never overlap with the first beam attack. Run to the area where the first attack happened, and you will always be safe.</li>
+                            <li>Insta-Kill Ground Attack: the same as the end of the Test Ground Attack; jump to avoid it. This attack happens after or at the same time as the Second Beam Attack. It may not occur during the first attack cycle.</li>
+                        </ul>
+                        <hr>
+                        <p>
+                            Once the damage phase ends, the island will go back to its original position, and six new glyphs will appear.    
+                        </p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <h3>Final Stand</h3>
+                    <div class="info-box-content-wrap">
+                        <p>
+                            During final stand, you will have only a brief attack cycle (faster than the normal damage phases one) to damage the witness. 
+                            <br><br>
+                            If you have not killed the Witness by the time the attack cycle ends, they will wipe the entire fireteam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="h2-end content-end"></div>
+        </div>
+    </div>
+    <aside class="sidebar left-sidebar hidden">
+        <div class="sidebar-btn left-btn">
+            <div class="sidebar-btn-inner">
+                <img class="sidebar-btn-img" src="./resources/images/icon_navigation.svg"/>
+            </div>
+        </div>
+        <div class="sidebar-container-left">
+            <span class="sidebar-title">Navigation</span>
+            <ul class="index">
+                <li id="link-introduction">
+                    <div><span id="link-text-introduction">Introduction</span></div>
+                </li>
+                <li id="link-traversali">
+                    <div><span id="link-text-traversali">Traversal I</span></div>
+                </li>
+                <li id="link-substratum">
+                    <div><span id="link-text-substratum">Substratum</span></div>
+                </li>
+                <li id="link-traversalii">
+                    <div><span id="link-text-traversalii">Traversal II</span></div>
+                </li>
+                <li id="link-dissipation">
+                    <div><span id="link-text-dissipation">Dissipation</span></div>
+                </li>
+                <li id="link-traversaliii">
+                    <div><span id="link-text-traversaliii">Traversal III</span></div>
+                </li>
+                <li id="link-repository">
+                    <div><span id="link-text-repository">Repository</span></div>
+                </li>
+                <li id="link-verity">
+                    <div><span id="link-text-verity">Verity</span></div>
+                </li>
+                <li id="link-traversaliv">
+                    <div><span id="link-text-traversaliv">Traversal IV</span></div>
+                </li>
+                <li id="link-zenith">
+                    <div><span id="link-text-zenith">Zenith</span></div>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <script type='text/javascript' src='./script/script.js'></script>
+</body>
+</html>
