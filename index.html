@@ -162,6 +162,7 @@
                             <li>The goal of the member of the fireteam assigned to the Closing Plate is to close the conductor</li>
                             <li>A conductor only closes with one specific resonance type. Using the wrong resonance type to close a conductor will wipe the entire fireteam</li>
                             <li>To close a conductor a guardian needs to shoot the glowing resonance inside the conductor while having at least x1 resonance stack. If done correctly the conductor will show damage numbers. The next time the Closing Plate is correctly stepped on (shrinking circle) the conductor will close and the guardian will lose a resonance stack</li>
+                            <li>Closing a Resonant Conductor will despawn every resonance spawned by its resonant plates that has not been picked up</li>
                             <h4>States</h4>
                             <ul class="info">
                                 <li>Deactivated: The pair of plates it is linked to are deactivated</li>
@@ -1607,11 +1608,13 @@
                     <span class="simulator-title">Raid</span>
                     <div class="simulator-launch-container">
                         <span class="simulator-name">Verity: Dissection Simulator</span>
-                        <a href="https://carlosf93.github.io/verity-dissection/" target="_blank">
-                            <div class="button-launch-inner">
-                                Launch
-                            </div>
-                        </a>
+                        <div class="button-launch-wrap simulator-launch">
+                            <a href="https://carlosf93.github.io/verity-dissection/" target="_blank">
+                                <div class="button-launch-inner">
+                                    Launch
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <span class="simulator-location">The Pale Heart // Salvation's Edge</span>
                 </div>
